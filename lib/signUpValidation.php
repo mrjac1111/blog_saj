@@ -17,6 +17,7 @@ class signUpValidation
     protected $confirmPassword;
     protected $gender;
     protected $profileImage;
+    protected $getProfileImageNameForSignupModel;
     protected $validationData;
     protected $firstNameErr;
     protected $lastNameErr;
@@ -28,6 +29,7 @@ class signUpValidation
     protected $showErrOnModel;
     protected $insertion=1;
     protected $passwordUnset=0;
+    protected $date;
 
 
     function  __construct(){
@@ -138,10 +140,13 @@ class signUpValidation
 
 $target_dir = "../img/profile/";
 
- $this->profileImage=basename($_FILES["input-file-preview"]["name"]);
- $target_file = $target_dir . basename($_FILES["input-file-preview"]["name"]);
+ $this->getProfileImageNameForSignupModel=basename($_FILES["input-file-preview"]["name"]);
+            $this->profileImage=strtotime("now"). basename($_FILES["input-file-preview"]["name"]);
+            $target_file = $target_dir .$this->profileImage;
+            // Instantiating DateTime Object
+
 $uploadOk = 1;
-$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+echo $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
     $check = getimagesize($_FILES["input-file-preview"]["tmp_name"]);
@@ -209,13 +214,13 @@ if ($uploadOk == 0) {
 if($this->insertion==1)
             {
             $signUp=new signUp();
-            $this->insert=$signUp->insert($this->firstName,$this->lastName,$this->email,$this->password,$this->gender);
+            $this->insert=$signUp->insert($this->firstName,$this->lastName,$this->email,$this->password,$this->profileImage,$this->gender);
             }
             else{
                 echo "Insertion Failed";
                 $this->showErrOnModel="ValidationErr";
                 $_SESSION["showErrOnModel"]=$this->showErrOnModel;
-               header('Location: ../index.php?firstName=' .$this->firstName.'&lastName='.$this->lastName.'&email='.$this->email.'&gender='.$this->gender.'&profileImage='.$this->profileImage);
+               header('Location: ../index.php?firstName=' .$this->firstName.'&lastName='.$this->lastName.'&email='.$this->email.'&gender='.$this->gender.'&profileImage='.$this->getProfileImageNameForSignupModel);
 
             }
 

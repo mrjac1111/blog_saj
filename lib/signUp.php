@@ -18,7 +18,7 @@ class signUP{
         $this->connection = $conn->getConnection();
     }
 
-    function insert( $firstName,$lastName,$email,$password){
+    function insert( $firstName,$lastName,$email,$password,$profileImage,$gender){
 /*
         $this->firstName=$_POST["first-name"];
         $this->lastName=$_POST["last-name"];
@@ -34,7 +34,7 @@ class signUP{
         echo $this->confirmPassword;
 */
 if(!isset($_SESSION["SignUpSuccessfully"])){
-        $sql = "INSERT INTO signup (firstName,lastName,email, password, profileImage) VALUES ('$firstName', '$lastName','$email','$password', 'jawad')";
+        $sql = "INSERT INTO signup (firstName,lastName,email, password, profileImage,gender) VALUES ('$firstName', '$lastName','$email','$password', '$profileImage','$gender')";
         if ($this->connection->query($sql) === TRUE) {
              $this->signUpSuccessfully="sign Up Successfully";
                 $_SESSION["SignUpSuccessfully"]=$this->signUpSuccessfully;
@@ -49,7 +49,7 @@ if(!isset($_SESSION["SignUpSuccessfully"])){
         }else
             {
                 $_SESSION["SignUpSuccessfully"]="You Already Sign Up";
-                header('Location: ../views/sign_up.php');
+                header('Location:../Index.php');
             }
 
         $this->connection->close();
