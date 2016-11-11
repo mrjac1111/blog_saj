@@ -3,35 +3,46 @@
 // Start the session
 session_start();
 
+include 'helper/nameValidation.php';
+include 'helper/emailValidation.php';
+include 'helper/passwordValidation.php';
+include 'helper/imageValidation.php';
+include 'helper/sexValidation.php';
 include 'signUP.php';
+
 
 
 class signUpValidation
 {
 
     // define variables and set to empty values
-    protected $firstName;
-    protected $lastName;
-    protected $email;
-    protected $password;
+/*    protected $firstName;
+    protected $lastName;*/
+//    protected $email;
+   /* protected $password;
     protected $confirmPassword;
-    protected $gender;
+   */ protected $gender;
     protected $profileImage;
     protected $getProfileImageNameForSignupModel;
-    protected $validationData;
-    protected $firstNameErr;
-    protected $lastNameErr;
-    protected $emailErr;
+   protected $validationData;
+/*    protected $firstNameErr;
+    protected $lastNameErr;*/
+    /*protected $emailErr;
     protected $passwordErr;
     protected $confirmPasswordErr;
-    protected $genderErr;
-    protected $profileImageErr;
+    */protected $genderErr;
+  //  protected $profileImageErr;
     protected $showErrOnModel;
-    protected $insertion=1;
+    //protected $insertion=1;
+    protected $insertion=0;
     protected $passwordUnset=0;
-    protected $date;
+   // protected $date;
 
-
+    private $nameValidation;
+    private $emailValidation;
+    private $passwordValidation;
+    private $imageValidation;
+    private $sexValidation;
     function  __construct(){
         $this->validationData=$this->firstName=$this->lastName=$this->email=$this->password=$this->confirmPassword="";
         $this->firstNameErr=$this->lastNameErr=$this->emailErr=$this->passwordErr=$this->confirmPasswordErr="";
@@ -40,7 +51,7 @@ class signUpValidation
     function  validation(){
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-                //First Name Validation
+/*                //First Name Validation
                 if (empty($_POST["first-name"])) {
                     echo $this->firstNameErr = "First Name is required";
                     $_SESSION["firstNameErr"] = $this->firstNameErr;
@@ -76,9 +87,21 @@ class signUpValidation
                     if(isset($_SESSION['lastNameErr']))
                         unset ($_SESSION['lastNameErr']);
                 }
-            }
+            }*/
+            $this->nameValidation= new nameValidation();
+            $this->nameValidation->firstNameValidation();
+            $this->nameValidation->lastNameValidation();
+            $this->emailValidation= new emailValidation();
+            $this->emailValidation->email();
+            $this->passwordValidation=new passwordValidation();
+            $this->passwordValidation->password();
+            $this->imageValidation=new imageValidation();
+            $this->imageValidation->image();
+            $this->sexValidation=new sexValidation();
+            $this->sexValidation->sex();
 
-                if (empty($_POST["email"])) {
+
+              /*  if (empty($_POST["email"])) {
                     echo $this->emailErr = "Email is required";
                     $_SESSION["emailErr"] = $this->emailErr;
 
@@ -95,8 +118,8 @@ class signUpValidation
                         if(isset($_SESSION['emailErr']))
                             unset ($_SESSION['emailErr']);
                     }
-                }
-            //Validates password & confirm passwords.
+                }*/
+            /*//Validates password & confirm passwords.
             if(!empty($_POST["password"]) && ($_POST["password"] == $_POST["confirm-password"])) {
                 $this->password = $this->test_input($_POST["password"]);
                 $this->confirmPassword = $this->test_input($_POST["confirm-password"]);
@@ -121,8 +144,8 @@ class signUpValidation
                     echo $this->passwordErr = "Please Check You've Entered Password Or Confirmed Your Password!";
                 $_SESSION["passwordErr"] = $this->passwordErr;
                     $this->insertion=0;
-                }
-            if(empty($_POST["sex"])){
+                }*/
+           /* if(empty($_POST["sex"])){
                 echo $this->genderErr="Gender is Required";
                 $this->insertion=0;
                 $_SESSION["sexErr"]=$this->genderErr;
@@ -132,12 +155,12 @@ class signUpValidation
                     unset($_SESSION["sex"]);
                 }
             }
-            /*
+           */ /*
              * Image Validation
              *
              */
 
-
+/*
 $target_dir = "../img/profile/";
 
  $this->getProfileImageNameForSignupModel=basename($_FILES["input-file-preview"]["name"]);
@@ -208,7 +231,7 @@ if ($uploadOk == 0) {
 }
 
 
-
+*/
 
 
 if($this->insertion==1)
