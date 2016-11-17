@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b8c3f05-cdf3-4430-8519-206a0e516419" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/helper/imageValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/imageValidation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/footer.php" afterPath="$PROJECT_DIR$/resources/views/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/header.php" afterPath="$PROJECT_DIR$/resources/views/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/post-page.php" afterPath="$PROJECT_DIR$/resources/views/post-page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/start-of-views.php" afterPath="$PROJECT_DIR$/resources/views/start-of-views.php" />
-    </list>
+    <list default="true" id="2b8c3f05-cdf3-4430-8519-206a0e516419" name="Default" comment="" />
     <ignored path="saj_blogeer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -422,15 +415,15 @@
       <workItem from="1479355661628" duration="45000" />
       <workItem from="1479355733125" duration="9000" />
       <workItem from="1479355763571" duration="16000000" />
-      <workItem from="1479398896148" duration="688000" />
+      <workItem from="1479398896148" duration="1287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66065000" />
+    <option name="totallyTimeSpent" value="66664000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21543409" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
