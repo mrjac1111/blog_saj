@@ -7,8 +7,10 @@ class imageValidation
     protected $getProfileImageNameForSignupModel;
     protected $profileImageErr;
     protected $insertion;
+    private $otherFielsdError;
 
-    function image(){
+    function image($otherFielsdError){
+        echo $this->otherFielsdError= $otherFielsdError;
 
         $target_dir = "../../public/img/profile/";
 
@@ -65,19 +67,27 @@ class imageValidation
 
                             $this->insertion=0;
 // if everything is ok, try to upload file
-                        } else {
-                            if (move_uploaded_file($_FILES["input-file-preview"]["tmp_name"], $target_file)) {
-                                echo "The file ". basename( $_FILES["input-file-preview"]["name"]). " has been uploaded.";
-                                if (isset($_SESSION["profileImageErr"])){
-                                    unset($_SESSION["profileImageErr"]);
-                                }
+                        } else
+                            if($this->otherFielsdError==1){
+                                if (move_uploaded_file($_FILES["input-file-preview"]["tmp_name"], $target_file)) {
+                                    echo "The file ". basename( $_FILES["input-file-preview"]["name"]). " has been uploaded.";
+                                    if (isset($_SESSION["profileImageErr"])){
+                                        unset($_SESSION["profileImageErr"]);
+                                    }
 
-                            } else {
-                                echo $this->profileImageErr="Sorry, there was an error uploading your file.";
+                                } else {
+                                    echo $this->profileImageErr="Sorry, there was an error uploading your file.";
+                                    $_SESSION["profileImageErr"] = $this->profileImageErr;
+                                    $this->insertion=0;
+                                }
+                            }else{
+                                echo $this->profileImageErr="Other fields are required";
                                 $_SESSION["profileImageErr"] = $this->profileImageErr;
                                 $this->insertion=0;
+
                             }
-                        }
+
+
         return $this->profileImage;
     }
 

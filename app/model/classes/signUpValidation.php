@@ -63,9 +63,11 @@ class signUpValidation
             $this->sexValidation=new sexValidation();
             $this->gender=$this->sexValidation->sex();
             $this->insertion=$this->sexValidation->insertionError();
+            echo '<br>';
+            echo $this->insertion;
 
             $this->imageValidation=new imageValidation();
-            $this->profileImage=$this->imageValidation->image();
+            $this->profileImage=$this->imageValidation->image($this->insertion);
             $this->getProfileImageNameForSignupModel=$this->imageValidation->getProfileImageNameForSignupModel();
             $this->insertion=$this->imageValidation->insertionError();
 
@@ -81,7 +83,7 @@ if($this->insertion==1)
                 echo "Insertion Failed";
                 $this->showErrOnModel="ValidationErr";
                 $_SESSION["showErrOnModel"]=$this->showErrOnModel;
-                header('Location: ../../index.php?firstName=' .$this->firstName.'&lastName='.$this->lastName.'&email='.$this->email.'&gender='.$this->gender);
+               header('Location: ../../index.php?firstName=' .$this->firstName.'&lastName='.$this->lastName.'&email='.$this->email.'&gender='.$this->gender);
 
             }
 
