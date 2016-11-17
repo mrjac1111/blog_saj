@@ -5,6 +5,7 @@ class sexValidation
 {
     protected $gender;
     protected $genderErr;
+    protected $insertion;
     function __construct()
     {
         $this->gender=$this->genderErr="";
@@ -21,6 +22,11 @@ class sexValidation
                 unset($_SESSION["sex"]);
             }
         }
+        return $this->gender;
+    }
+
+    function  insertionError(){
+        return $this->insertion;
     }
 
 }

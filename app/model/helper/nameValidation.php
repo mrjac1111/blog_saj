@@ -1,21 +1,19 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: EC-002
- * Date: 11/11/2016
- * Time: 11:02 AM
- */
 class nameValidation
 {
     protected $firstName;
     protected $lastName;
     protected $firstNameErr;
     protected $lastNameErr;
+    private $testInput;
+    protected $insertion;
 
     function __construct()
     {
         $this->firstName=$this->lastName=$this->firstNameErr=$this->lastNameErr="";
+        $this->testInput=new testInputFields();
+
     }
     function firstNameValidation(){
         //First Name Validation
@@ -25,7 +23,7 @@ class nameValidation
             $this->insertion=0;
 
         } else {
-            $this->firstName = $this->test_input($_POST["first-name"]);
+            $this->firstName = $this->testInput->test_input($_POST["first-name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z ]*$/",$this->firstName)) {
                 echo $this->firstNameErr = "Only letters and white space allowed";
@@ -37,6 +35,7 @@ class nameValidation
                     unset ($_SESSION['firstNameErr']);
             }
         }
+        return $this->firstName;
 
     }
     function lastNameValidation(){
@@ -46,7 +45,7 @@ class nameValidation
             $_SESSION["lastNameErr"] = $this->lastNameErr;
             $this->insertion=0;
         } else {
-            $this->lastName = $this->test_input($_POST["last-name"]);
+            $this->lastName = $this->testInput->test_input($_POST["last-name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z ]*$/",$this->lastName)) {
                 echo $this->lastNameErr = "Only letters and white space allowed";
@@ -59,5 +58,11 @@ class nameValidation
             }
         }
 
+        return $this->lastName;
+
+    }
+
+    function  insertionError(){
+        return $this->insertion;
     }
 }

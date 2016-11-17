@@ -1,12 +1,12 @@
 <?php
 
-
 class passwordValidation
 {
     protected $password;
     protected $confirmPassword;
     protected $passwordErr;
     protected $confirmPasswordErr;
+    protected $insertion;
 
     function __construct()
     {
@@ -39,5 +39,9 @@ class passwordValidation
             $_SESSION["passwordErr"] = $this->passwordErr;
             $this->insertion=0;
         }
+    }
+
+    function  insertionError(){
+        return $this->insertion;
     }
 }

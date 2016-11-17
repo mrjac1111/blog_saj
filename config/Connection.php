@@ -1,6 +1,5 @@
 <?php
 
-include 'helper/getConnection.php';
 
 class Connection
 {
@@ -16,10 +15,7 @@ class Connection
         $this->db_password="";
         $this->db_host="localhost";
     }
-    public function connectToDatabase(){
-        $this->getConnection=new getConnection($this->db_host,$this->db_user,$this->db_password,$this->db_name);
-    }
-    /*public function getConnection()
+    public function getConnection()
     {
         $this->connect_db=new mysqli($this->db_host,$this->db_user,$this->db_password,$this->db_name);
         if($this->connect_db->connect_error){
@@ -28,7 +24,7 @@ class Connection
         else{
             return $this->connect_db;
         }
-    }*/
+    }
 
 
 }

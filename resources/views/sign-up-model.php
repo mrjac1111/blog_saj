@@ -10,7 +10,7 @@
                 <h4 class="modal-title comment-title"><i class="glyphicon glyphicon-globe"></i> Sign Up It's Free</h4>
             </div>
             <div class="modal-body sign-up-model">
-                <form action="lib/signUpValidation.php" method="post" class="form" role="form" enctype="multipart/form-data">
+                <form action="http/controller/signUpController.php" method="post" class="form" role="form" enctype="multipart/form-data">
 
                     <div class="row sign-up-fields-margin">
                         <div class="col-xs-6 col-md-6">
@@ -53,7 +53,7 @@
                     <div class="btn btn-default image-preview-input">
                         <span class="glyphicon glyphicon-folder-open"></span>
                         <span class="image-preview-input-title">Browse</span>
-                        <input type="file"  accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
+                        <input type="file"  accept="image/png, image/jpeg, image/gif" name="input-file-preview" /> <!-- rename it -->
                     </div>
                 </span>
                         </div><!-- /input-group image-preview [TO HERE]-->

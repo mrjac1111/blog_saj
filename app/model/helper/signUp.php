@@ -1,14 +1,8 @@
 <?php
 
-include 'Connection.php';
+include '../../../config/Connection.php';
 class signUP{
-    /*private $firstName;
-    private $lastName;
-    private $email;
-    private $password;
-    private $confirmPassword;
 
-    */
     private $connection;
     private $signUpSuccessfully;
 

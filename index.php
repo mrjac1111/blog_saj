@@ -1,22 +1,22 @@
 <?//php session_start(); ?>
 
-<?php include 'views/start-of-views.php'; ?>
-<?php include 'views/header.php'; ?>
-<?php include 'views/header-social-bar.php'; ?>
-<?php include 'views/post-page-login.php'; ?>
-<?php include 'views/post-page-catagery.php'; ?>
-<?php include 'views/post-page.php'; ?>
-<?php include 'views/post-page-pagination.php'; ?>
-<?php include 'views/footer.php'; ?>
-<?php include 'views/comment-model.php'; ?>
-<?php include 'views/views-model.php'; ?>
-<?php include 'views/likes-model.php'; ?>
-<?php include 'views/sign-up-model.php'; ?>
-<?php include 'views/end-of-views.php'; ?>
+<?php include 'resources/views/start-of-views.php'; ?>
+<?php include 'resources/views/header.php'; ?>
+<?php include 'resources/views/header-social-bar.php'; ?>
+<?php include 'resources/views/post-page-login.php'; ?>
+<?php include 'resources/views/post-page-catagery.php'; ?>
+<?php include 'resources/views/post-page.php'; ?>
+<?php include 'resources/views/post-page-pagination.php'; ?>
+<?php include 'resources/views/footer.php'; ?>
+<?php include 'resources/views/comment-model.php'; ?>
+<?php include 'resources/views/views-model.php'; ?>
+<?php include 'resources/views/likes-model.php'; ?>
+<?php include 'resources/views/sign-up-model.php'; ?>
+<?php include 'resources/views/end-of-views.php'; ?>
 
 <!-- if sign up fail  -->
 
-<?php include 'lib/signUpFail.php';
+<?php include 'app/model/helper/signUpFail.php';
     $signUPFail= new signUpFail();
 ?>
 <!-- sign up fail end -->

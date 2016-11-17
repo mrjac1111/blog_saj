@@ -5,9 +5,12 @@ class emailValidation
 {
     protected $email;
     protected $emailErr;
+    private $testInput;
+    private $insertion;
     function __construct()
     {
         $this->email=$this->emailErr="";
+        $this->testInput=new testInputFields();
     }
     function email(){
         if (empty($_POST["email"])) {
@@ -16,7 +19,7 @@ class emailValidation
 
             $this->insertion=0;
         } else {
-            $this->email = $this->test_input($_POST["email"]);
+            $this->email = $this->testInput->test_input($_POST["email"]);
             // check if e-mail address is well-formed
             if (!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
                 echo $this->emailErr = "Invalid email format";
@@ -28,5 +31,10 @@ class emailValidation
                     unset ($_SESSION['emailErr']);
             }
         }
+        return $this->email;
+    }
+
+    function  insertionError(){
+        return $this->insertion;
     }
 }

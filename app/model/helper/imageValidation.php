@@ -6,10 +6,11 @@ class imageValidation
     protected $profileImage;
     protected $getProfileImageNameForSignupModel;
     protected $profileImageErr;
+    protected $insertion;
 
     function image(){
 
-        $target_dir = "../img/profile/";
+        $target_dir = "../../../public/img/profile/";
 
         $this->getProfileImageNameForSignupModel=basename($_FILES["input-file-preview"]["name"]);
         $this->profileImage=strtotime("now"). basename($_FILES["input-file-preview"]["name"]);
@@ -77,6 +78,15 @@ class imageValidation
                                 $this->insertion=0;
                             }
                         }
+        return $this->profileImage;
+    }
+
+    function  insertionError(){
+        return $this->insertion;
+    }
+    function  getProfileImageNameForSignupModel(){
+
+        return $this->getProfileImageNameForSignupModel;
     }
 
 }
