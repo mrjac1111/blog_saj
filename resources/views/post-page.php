@@ -3,7 +3,7 @@
 
     <div class="col-md-12 post">
         <div class="col-md-4 post-img">
-            <img src="img/300x200_ggb_fort_point.jpg" class="img-responsive" alt="Post Image" >
+            <img src="public/img/300x200_ggb_fort_point.jpg" class="img-responsive" alt="Post Image" >
             <div class="col-md-12 user-name"> <p>User Name</p></div>
         </div>
         <div class="col-md-8 post-content">
@@ -23,7 +23,7 @@
 
     <div class="col-md-12 post">
         <div class="col-md-4 post-img">
-            <img src="img/300x200_ggb_fort_point.jpg" class="img-responsive" alt="Post Image" >
+            <img src="public/img/300x200_ggb_fort_point.jpg" class="img-responsive" alt="Post Image" >
             <div class="col-md-12 user-name"> <p>User Name</p></div>
         </div>
         <div class="col-md-8 post-content">
@@ -43,7 +43,7 @@
 
     <div class="col-md-12 post">
         <div class="col-md-4 post-img">
-            <img src="img/300x200_ggb_fort_point.jpg" class="img-responsive" alt="Post Image" >
+            <img src="public/img/300x200_ggb_fort_point.jpg" class="img-responsive" alt="Post Image" >
             <div class="col-md-12 user-name"> <p>User Name</p></div>
         </div>
         <div class="col-md-8 post-content">
@@ -63,7 +63,7 @@
 
     <div class="col-md-12 post">
         <div class="col-md-4 post-img">
-            <img src="img/300x200_ggb_fort_point.jpg" class="img-responsive" alt="Post Image" >
+            <img src="public/img/300x200_ggb_fort_point.jpg" class="img-responsive" alt="Post Image" >
             <div class="col-md-12 user-name"> <p>User Name</p></div>
         </div>
         <div class="col-md-8 post-content">
@@ -83,7 +83,7 @@
 
     <div class="col-md-12 post">
         <div class="col-md-4 post-img">
-            <img src="img/300x200_ggb_fort_point.jpg" class="img-responsive" alt="Post Image" >
+            <img src="public/img/300x200_ggb_fort_point.jpg" class="img-responsive" alt="Post Image" >
             <div class="col-md-12 user-name"> <p>User Name</p></div>
         </div>
         <div class="col-md-8 post-content">

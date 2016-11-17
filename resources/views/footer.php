@@ -3,7 +3,7 @@
 <footer>
     <div class="container footer">
         <div class="col-md-4 footer-logo">
-            <a class="navbar-brand"  href="#"> <img class="img-responsive" src="img/saj-blog-logo.png" alt="LOGO"> </a>
+            <a class="navbar-brand"  href="#"> <img class="img-responsive" src="public/img/saj-blog-logo.png" alt="LOGO"> </a>
 
         </div>
         <div class="col-md-4 footer-menu">

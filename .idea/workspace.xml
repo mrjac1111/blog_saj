@@ -2,62 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b8c3f05-cdf3-4430-8519-206a0e516419" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/font-awesome.min.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/font-awesome.min.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/public/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/public/css/bootstrap-theme.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/public/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/public/css/bootstrap-theme.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/public/css/bootstrap.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/06_BLOG.jpg" afterPath="$PROJECT_DIR$/public/img/06_BLOG.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/300x200_ggb_fort_point.jpg" afterPath="$PROJECT_DIR$/public/img/300x200_ggb_fort_point.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/ABBY-Free-PSD-Blog-Theme-thumb.jpg" afterPath="$PROJECT_DIR$/public/img/ABBY-Free-PSD-Blog-Theme-thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/blogin-template.jpg" afterPath="$PROJECT_DIR$/public/img/blogin-template.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/images.jpg" afterPath="$PROJECT_DIR$/public/img/images.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/light_big.jpg" afterPath="$PROJECT_DIR$/public/img/light_big.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/magazine-blog-template.jpg" afterPath="$PROJECT_DIR$/public/img/magazine-blog-template.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/saj-blog-logo.png" afterPath="$PROJECT_DIR$/public/img/saj-blog-logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/saj-blog-logo1.png" afterPath="$PROJECT_DIR$/public/img/saj-blog-logo1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery.min.js" afterPath="$PROJECT_DIR$/public/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/npm.js" afterPath="$PROJECT_DIR$/public/js/npm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/sign-up-image-get.js" afterPath="$PROJECT_DIR$/public/js/sign-up-image-get.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/Connection.php" afterPath="$PROJECT_DIR$/config/Connection.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/helper/emailValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/emailValidation.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/helper/getConnection.php" afterPath="$PROJECT_DIR$/app/model/helper/getConnection.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/helper/imageValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/imageValidation.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/helper/nameValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/nameValidation.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/helper/passwordValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/passwordValidation.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/helper/sexValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/sexValidation.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/signUp.php" afterPath="$PROJECT_DIR$/app/model/helper/signUp.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/signUpFail.php" afterPath="$PROJECT_DIR$/app/model/helper/signUpFail.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/signUpValidation.php" afterPath="$PROJECT_DIR$/app/model/classes/signUpValidation.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/comment-model.php" afterPath="$PROJECT_DIR$/resources/views/comment-model.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/end-of-views.php" afterPath="$PROJECT_DIR$/resources/views/end-of-views.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/footer.php" afterPath="$PROJECT_DIR$/resources/views/footer.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/header-social-bar.php" afterPath="$PROJECT_DIR$/resources/views/header-social-bar.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/header.php" afterPath="$PROJECT_DIR$/resources/views/header.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/likes-model.php" afterPath="$PROJECT_DIR$/resources/views/likes-model.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/post-page-catagery.php" afterPath="$PROJECT_DIR$/resources/views/post-page-catagery.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/post-page-login.php" afterPath="$PROJECT_DIR$/resources/views/post-page-login.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/post-page-pagination.php" afterPath="$PROJECT_DIR$/resources/views/post-page-pagination.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/post-page.php" afterPath="$PROJECT_DIR$/resources/views/post-page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/sign-up-model.php" afterPath="$PROJECT_DIR$/resources/views/sign-up-model.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/start-of-views.php" afterPath="$PROJECT_DIR$/resources/views/start-of-views.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/views-model.php" afterPath="$PROJECT_DIR$/resources/views/views-model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/helper/imageValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/imageValidation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/footer.php" afterPath="$PROJECT_DIR$/resources/views/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/header.php" afterPath="$PROJECT_DIR$/resources/views/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/post-page.php" afterPath="$PROJECT_DIR$/resources/views/post-page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/start-of-views.php" afterPath="$PROJECT_DIR$/resources/views/start-of-views.php" />
     </list>
     <ignored path="saj_blogeer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,23 +29,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="signUp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/helper/signUp.php">
+      <file leaf-file-name="signUpValidation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/classes/signUpValidation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-              <folding>
-                <marker date="1479364870364" expanded="true" signature="398:557" placeholder="INSERT INTO signup... " />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signUpValidation.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/model/classes/signUpValidation.php">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+            <state relative-caret-position="391">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header-social-bar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/header-social-bar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post-page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/post-page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start-of-views.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/start-of-views.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -121,41 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sexValidation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/helper/sexValidation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imageValidation.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="imageValidation.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/model/helper/imageValidation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nameValidation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/helper/nameValidation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="passwordValidation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/helper/passwordValidation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-163">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -166,16 +124,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="emailValidation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/helper/emailValidation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -238,10 +186,14 @@
         <option value="$PROJECT_DIR$/app/model/helper/passwordValidation.php" />
         <option value="$PROJECT_DIR$/app/model/helper/emailValidation.php" />
         <option value="$PROJECT_DIR$/app/model/helper/sexValidation.php" />
-        <option value="$PROJECT_DIR$/app/model/helper/imageValidation.php" />
         <option value="$PROJECT_DIR$/http/controller/signUPController.php" />
         <option value="$PROJECT_DIR$/resources/views/sign-up-model.php" />
         <option value="$PROJECT_DIR$/app/model/classes/signUpValidation.php" />
+        <option value="$PROJECT_DIR$/resources/views/start-of-views.php" />
+        <option value="$PROJECT_DIR$/resources/views/header.php" />
+        <option value="$PROJECT_DIR$/resources/views/post-page.php" />
+        <option value="$PROJECT_DIR$/resources/views/footer.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/imageValidation.php" />
       </list>
     </option>
   </component>
@@ -256,9 +208,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -285,6 +238,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -319,6 +273,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saj_blogeer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog_saj" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,12 +350,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -453,17 +422,18 @@
       <workItem from="1479355661628" duration="45000" />
       <workItem from="1479355733125" duration="9000" />
       <workItem from="1479355763571" duration="16000000" />
+      <workItem from="1479398896148" duration="688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65377000" />
+    <option name="totallyTimeSpent" value="66065000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1386" height="788" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2096531" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21543409" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -596,24 +566,11 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/freebie-footer-templates/css/footer-distributed-with-address-and-phones.css" />
     <entry file="file://$USER_HOME$/Downloads/freebie-footer-templates/footer-distributed-with-address-and-phones.html" />
-    <entry file="file://$PROJECT_DIR$/../saj_blog/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../saj_blog/index.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/post-page-login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/post-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -635,20 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/header-social-bar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -675,13 +618,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../saj_blog/views/sign_up.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../saj_blog/views/sign_up.php" />
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -696,27 +633,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/start-of-views.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/newBlog-master/helper/functions/File_Handling_For_Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/newBlog-master/helper/functions/File_Handling_For_Image.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -731,10 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1478762886917" expanded="true" signature="241:331" placeholder="..." />
-            <marker date="1478762886917" expanded="true" signature="272:320" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,31 +655,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/helper/sub_helper_funcation/testInput.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/helper/.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/sub_helper_funcation/testInput.php" />
+    <entry file="file://$PROJECT_DIR$/app/model/helper/.php" />
     <entry file="file://$PROJECT_DIR$/app/model/helper/getConnection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,15 +678,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <marker date="1479364870364" expanded="true" signature="398:557" placeholder="INSERT INTO signup... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/helper/passwordValidation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
+        <state relative-caret-position="136">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding />
         </state>
@@ -798,7 +692,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/helper/nameValidation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="425">
           <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding />
         </state>
@@ -806,7 +700,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/helper/emailValidation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
+        <state relative-caret-position="561">
           <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
           <folding />
         </state>
@@ -816,14 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/helper/imageValidation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
           <folding />
         </state>
       </provider>
@@ -854,8 +740,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/classes/signUpValidation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/start-of-views.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/header-social-bar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/post-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/imageValidation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding />
         </state>
       </provider>

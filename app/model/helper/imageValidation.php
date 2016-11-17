@@ -10,7 +10,7 @@ class imageValidation
 
     function image(){
 
-        $target_dir = "../../../public/img/profile/";
+        $target_dir = "../../public/img/profile/";
 
         $this->getProfileImageNameForSignupModel=basename($_FILES["input-file-preview"]["name"]);
         $this->profileImage=strtotime("now"). basename($_FILES["input-file-preview"]["name"]);
