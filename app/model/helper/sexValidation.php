@@ -5,7 +5,7 @@ class sexValidation
 {
     protected $gender;
     protected $genderErr;
-    protected $insertion;
+    protected $insertion=1;
     function __construct()
     {
         $this->gender=$this->genderErr="";

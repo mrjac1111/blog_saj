@@ -6,11 +6,11 @@ class imageValidation
     protected $profileImage;
     protected $getProfileImageNameForSignupModel;
     protected $profileImageErr;
-    protected $insertion;
+    protected $insertion=1;
     private $otherFielsdError;
 
     function image($otherFielsdError){
-        echo $this->otherFielsdError= $otherFielsdError;
+        $this->otherFielsdError= $otherFielsdError;
 
         $target_dir = "../../public/img/profile/";
 

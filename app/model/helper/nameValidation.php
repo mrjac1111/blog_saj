@@ -7,7 +7,7 @@ class nameValidation
     protected $firstNameErr;
     protected $lastNameErr;
     private $testInput;
-    protected $insertion;
+    protected $insertion=1;
 
     function __construct()
     {

@@ -6,7 +6,7 @@ class emailValidation
     protected $email;
     protected $emailErr;
     private $testInput;
-    private $insertion;
+    private $insertion=1;
     private $checkEmail;
     private $runEmail;
     function __construct()

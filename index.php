@@ -16,8 +16,9 @@
 
 <!-- if sign up fail  -->
 
-<?php include 'app/model/helper/signUpFail.php';
-    $signUPFail= new signUpFail();
+<?php include 'app/model/helper/signUpModelRedirect.php';
+    $signUPFail= new signUpModelRedirect();
+    unset($_SESSION["redirectModel"]);
 ?>
 <!-- sign up fail end -->
 

@@ -10,6 +10,7 @@ include '../../app/model/helper/imageValidation.php';
 include '../../app/model/helper/sexValidation.php';
 include '../../app/model/helper/signUp.php';
 include '../../app/model/helper/testInputFields.php';
+//include '../../app/model/helper/signupDataInsert.php';
 include '../../config/Connection.php';
 
 
@@ -45,33 +46,31 @@ class signUpValidation
     }
     function  validation(){
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+echo $this->insertion;
             $this->nameValidation= new nameValidation();
              $this->firstName= $this->nameValidation->firstNameValidation();
-            $this->insertion=$this->nameValidation->insertionError();
-
+            echo $this->insertion=$this->nameValidation->insertionError();
             $this->lastName=$this->nameValidation->lastNameValidation();
-            $this->insertion=$this->nameValidation->insertionError();
+           echo $this->insertion=$this->nameValidation->insertionError();
 
             $this->emailValidation= new emailValidation();
             $this->email= $this->emailValidation->email();
-            $this->insertion=$this->emailValidation->insertionError();
+            echo $this->insertion=$this->emailValidation->insertionError();
 
             $this->passwordValidation=new passwordValidation();
            $this->password= $this->passwordValidation->password();
-            $this->insertion=$this->passwordValidation->insertionError();
+            echo $this->insertion=$this->passwordValidation->insertionError();
 
 
             $this->sexValidation=new sexValidation();
             $this->gender=$this->sexValidation->sex();
-            $this->insertion=$this->sexValidation->insertionError();
-            echo '<br>';
-            echo $this->insertion;
+           echo  $this->insertion=$this->sexValidation->insertionError();
 
             $this->imageValidation=new imageValidation();
             $this->profileImage=$this->imageValidation->image($this->insertion);
             $this->getProfileImageNameForSignupModel=$this->imageValidation->getProfileImageNameForSignupModel();
-            $this->insertion=$this->imageValidation->insertionError();
+           echo $this->insertion=$this->imageValidation->insertionError();
+
 
 
 
@@ -84,8 +83,8 @@ if($this->insertion==1)
             else{
                 echo "Insertion Failed";
                 $this->showErrOnModel="ValidationErr";
-                $_SESSION["showErrOnModel"]=$this->showErrOnModel;
-               header('Location: ../../index.php?firstName=' .$this->firstName.'&lastName='.$this->lastName.'&email='.$this->email.'&gender='.$this->gender);
+                $_SESSION["redirectModel"]=$this->showErrOnModel;
+        header('Location: ../../index.php?firstName=' .$this->firstName.'&lastName='.$this->lastName.'&email='.$this->email.'&gender='.$this->gender);
 
             }
 

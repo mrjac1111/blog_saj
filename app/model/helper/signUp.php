@@ -9,7 +9,7 @@ class signUP{
     function __construct()
     {
         $conn = new Connection();
-        $this->connection = $conn->connectToDatabase();
+        $this->connection = $conn->getConnection();
     }
 
     function insert( $firstName,$lastName,$email,$password,$profileImage,$gender){
@@ -17,9 +17,10 @@ class signUP{
 if(!isset($_SESSION["SignUpSuccessfully"])){
         $sql = "INSERT INTO signup (firstName,lastName,email, password, profileImage,gender) VALUES ('$firstName', '$lastName','$email','$password', '$profileImage','$gender')";
         if ($this->connection->query($sql) === TRUE) {
-             $this->signUpSuccessfully="sign Up Successfully";
-                $_SESSION["SignUpSuccessfully"]=$this->signUpSuccessfully;
-               header('Location: ../views/sign_up.php');
+             echo $this->signUpSuccessfully="sign Up Successfully";
+            $_SESSION["SignUpSuccessfully"]=$this->signUpSuccessfully;
+            $_SESSION["redirectModel"]=$this->signUpSuccessfully;
+              header('Location: ../../index.php');
 
            }else {
             echo "Error: " . $sql . "<br>" . $this->connection->error;
@@ -29,12 +30,15 @@ if(!isset($_SESSION["SignUpSuccessfully"])){
 
         }else
             {
-                $_SESSION["SignUpSuccessfully"]="You Already Sign Up";
-                header('Location:../Index.php');
+                $this->signUpSuccessfully="You Already Sign Up";
+                $_SESSION["SignUpSuccessfully"]=$this->signUpSuccessfully;
+                $_SESSION["redirectModel"]=$this->signUpSuccessfully;
+                header('Location: ../../index.php');
+
             }
 
         $this->connection->close();
-        
+
     }
 
 }

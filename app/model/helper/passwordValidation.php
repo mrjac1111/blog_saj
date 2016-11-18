@@ -6,7 +6,7 @@ class passwordValidation
     protected $confirmPassword;
     protected $passwordErr;
     protected $confirmPasswordErr;
-    protected $insertion;
+    protected $insertion=1;
 
     function __construct()
     {
@@ -41,6 +41,7 @@ class passwordValidation
             $_SESSION["passwordErr"] = $this->passwordErr;
             $this->insertion=0;
         }
+        return $this->password;
     }
 
     function  insertionError(){
