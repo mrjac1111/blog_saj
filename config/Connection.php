@@ -8,7 +8,6 @@ class Connection
     protected $db_password;
     protected $db_host;
     public $connect_db;
-    private $getConnection;
     function __construct(){
         $this->db_name="saj_blog";
         $this->db_user="root";

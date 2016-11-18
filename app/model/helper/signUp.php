@@ -1,9 +1,9 @@
 <?php
 
-include '../../../config/Connection.php';
+//include '../../../config/Connection.php';
 class signUP{
 
-    private $connection;
+    protected $connection;
     private $signUpSuccessfully;
 
     function __construct()

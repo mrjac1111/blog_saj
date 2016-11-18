@@ -10,6 +10,8 @@ include '../../app/model/helper/imageValidation.php';
 include '../../app/model/helper/sexValidation.php';
 include '../../app/model/helper/signUp.php';
 include '../../app/model/helper/testInputFields.php';
+include '../../config/Connection.php';
+
 
 
 
@@ -37,10 +39,10 @@ class signUpValidation
     private $password;
     protected $gender;
     protected $profileImage;
-    function  __construct(){
 
-
-}
+    function __construct()
+    {
+    }
     function  validation(){
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

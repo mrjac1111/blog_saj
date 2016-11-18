@@ -11,12 +11,14 @@ class passwordValidation
     function __construct()
     {
         $this->password = $this->confirmPassword = $this->passwordErr = $this->confirmPasswordErr = "";
+        $this->testInput=new testInputFields();
+
     }
     function password(){
         //Validates password & confirm passwords.
         if(!empty($_POST["password"]) && ($_POST["password"] == $_POST["confirm-password"])) {
-            $this->password = $this->test_input($_POST["password"]);
-            $this->confirmPassword = $this->test_input($_POST["confirm-password"]);
+            $this->password = $this->testInput->test_input($_POST["password"]);
+            $this->confirmPassword = $this->testInput->test_input($_POST["confirm-password"]);
             if (strlen($_POST["password"]) <= '8') {
                 echo  $this->passwordErr = "Your Password Must Contain At Least 8 Characters!";
                 $_SESSION["passwordErr"] = $this->passwordErr;
