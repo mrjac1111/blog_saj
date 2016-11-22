@@ -11,7 +11,7 @@
             </div>
             <div class="modal-body sign-up-model">
                 <form action="http/controller/signUpController.php" method="post" class="form" role="form" enctype="multipart/form-data">
-
+                    <input type="hidden" name="requestFromSignUp" value="requestFromSignUp">
                     <div class="row sign-up-fields-margin">
                         <div class="col-xs-6 col-md-6">
                             <input class="form-control" id="firstName" name="first-name" placeholder="First Name" type="text" value="<?php if(isset($_GET['firstName'])){echo $_GET['firstName'];} ?>"autofocus />

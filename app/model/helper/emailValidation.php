@@ -33,8 +33,20 @@ class emailValidation
             else {
 
                 // check if user is already exist or not
+                if (!empty($_POST['requestFromSignUp']=='requestFromSignUp')){
+                    $query  ="select email from signup where email='$this->email'";
+                    $result = mysqli_query($this->connection, $query);
+                    $row = mysqli_fetch_assoc($result);
+                    if(isset($row['email'])){
+                        echo $this->emailErr = "Email is already exist ,Try another";
+                        $_SESSION["emailErr"] = $this->emailErr;
+                        $this->insertion=0;
 
-                $query  ="select email from signup where email='$this->email'";
+                    }else
+                        if(isset($_SESSION['emailErr']))
+                            unset ($_SESSION['emailErr']);
+                }
+                /*$query  ="select email from signup where email='$this->email'";
                 $result = mysqli_query($this->connection, $query);
                 $row = mysqli_fetch_assoc($result);
                 if(isset($row['email'])){
@@ -44,7 +56,7 @@ class emailValidation
 
                 }else
                     if(isset($_SESSION['emailErr']))
-                        unset ($_SESSION['emailErr']);
+                        unset ($_SESSION['emailErr']);*/
 
 
             }

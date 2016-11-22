@@ -79,13 +79,7 @@ class signUpValidation
             $this->profileImage=$this->imageValidation->image($this->imageIsSetIfOtherValidationAreTrue);
             $this->getProfileImageNameForSignupModel=$this->imageValidation->getProfileImageNameForSignupModel();
            echo $this->isImageValid=$this->imageValidation->insertionError();
-            echo $this->isFirstNameValid;
-            echo $this->isLastNameValid;
-            echo $this->isEmailValid;
-            echo $this->isPasswordValid;
-            echo $this->isImageValid;
-            echo $this->isGenderValid;
-
+     
 
 
 if($this->isFirstNameValid&&$this->isLastNameValid&&$this->isEmailValid&&$this->isPasswordValid&&$this->isGenderValid&&$this->isImageValid==1) {
