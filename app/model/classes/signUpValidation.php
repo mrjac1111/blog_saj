@@ -25,7 +25,13 @@ class signUpValidation
    protected $validationData;
     protected $genderErr;
     protected $showErrOnModel;
-    protected $insertion=1;
+    protected $isFirstNameValid;
+    protected $isLastNameValid;
+    protected $isEmailValid;
+    protected $isPasswordValid;
+    protected $isImageValid;
+    protected $isGenderValid;
+    protected $imageIsSetIfOtherValidationAreTrue;
     protected $passwordUnset=0;
 
     private $nameValidation;
@@ -46,47 +52,52 @@ class signUpValidation
     }
     function  validation(){
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-echo $this->insertion;
             $this->nameValidation= new nameValidation();
              $this->firstName= $this->nameValidation->firstNameValidation();
-            echo $this->insertion=$this->nameValidation->insertionError();
+            echo $this->isFirstNameValid=$this->nameValidation->insertionError();
             $this->lastName=$this->nameValidation->lastNameValidation();
-           echo $this->insertion=$this->nameValidation->insertionError();
+           echo $this->isLastNameValid=$this->nameValidation->insertionError();
 
             $this->emailValidation= new emailValidation();
             $this->email= $this->emailValidation->email();
-            echo $this->insertion=$this->emailValidation->insertionError();
+            echo $this->isEmailValid=$this->emailValidation->insertionError();
 
             $this->passwordValidation=new passwordValidation();
            $this->password= $this->passwordValidation->password();
-            echo $this->insertion=$this->passwordValidation->insertionError();
+            echo $this->isPasswordValid=$this->passwordValidation->insertionError();
 
 
             $this->sexValidation=new sexValidation();
             $this->gender=$this->sexValidation->sex();
-           echo  $this->insertion=$this->sexValidation->insertionError();
+           echo  $this->isGenderValid=$this->sexValidation->insertionError();
+
+            if($this->isFirstNameValid&&$this->isLastNameValid&&$this->isEmailValid&&$this->isPasswordValid&&$this->isGenderValid==1){
+                $this->imageIsSetIfOtherValidationAreTrue=1;
+            }
 
             $this->imageValidation=new imageValidation();
-            $this->profileImage=$this->imageValidation->image($this->insertion);
+            $this->profileImage=$this->imageValidation->image($this->imageIsSetIfOtherValidationAreTrue);
             $this->getProfileImageNameForSignupModel=$this->imageValidation->getProfileImageNameForSignupModel();
-           echo $this->insertion=$this->imageValidation->insertionError();
+           echo $this->isImageValid=$this->imageValidation->insertionError();
+            echo $this->isFirstNameValid;
+            echo $this->isLastNameValid;
+            echo $this->isEmailValid;
+            echo $this->isPasswordValid;
+            echo $this->isImageValid;
+            echo $this->isGenderValid;
 
 
 
-
-
-if($this->insertion==1)
-            {
-            $signUp=new signUp();
-            $this->insert=$signUp->insert($this->firstName,$this->lastName,$this->email,$this->password,$this->profileImage,$this->gender);
-            }
-            else{
-                echo "Insertion Failed";
-                $this->showErrOnModel="ValidationErr";
-                $_SESSION["redirectModel"]=$this->showErrOnModel;
-        header('Location: ../../index.php?firstName=' .$this->firstName.'&lastName='.$this->lastName.'&email='.$this->email.'&gender='.$this->gender);
-
-            }
+if($this->isFirstNameValid&&$this->isLastNameValid&&$this->isEmailValid&&$this->isPasswordValid&&$this->isGenderValid&&$this->isImageValid==1) {
+    $signUp=new signUp();
+    $this->insert=$signUp->insert($this->firstName,$this->lastName,$this->email,$this->password,$this->profileImage,$this->gender);
+}
+else {
+    echo "Insertion aaa Failed";
+    $this->showErrOnModel = "ValidationErr";
+    $_SESSION["redirectModel"] = $this->showErrOnModel;
+    header('Location: ../../index.php?firstName=' . $this->firstName . '&lastName=' . $this->lastName . '&email=' . $this->email . '&gender=' . $this->gender);
+}
 
         }
 
