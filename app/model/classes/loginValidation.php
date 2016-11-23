@@ -64,9 +64,8 @@ class logInValidation
             }
             else {
                 echo "Insertion  Failed";
-                $this->showErrOnModel = "ValidationErr";
-                $_SESSION["redirectModel"] = $this->showErrOnModel;
-               // header('Location: ../../index.php?firstName=' . '&email=' . $this->email );
+                header('Location: ../../index.php?firstName=' . '&email=' . $this->email );
+
             }
 
         }

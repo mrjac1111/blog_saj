@@ -20,6 +20,7 @@ class signUpModelRedirect
     });
 </script> ";
             unset($_SESSION["showErrOnModel"]);
+            unset($_SESSION["redirectModel"]);
         }
 
     }

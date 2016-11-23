@@ -1,4 +1,6 @@
-<?//php session_start(); ?>
+<?php if(isset($_SESSION['redirectModel'])){
+    echo 'redirect is set';
+}//session_start(); ?>
 
 <?php include 'resources/views/start-of-views.php'; ?>
 <?php include 'resources/views/header.php'; ?>
@@ -18,7 +20,8 @@
 
 <?php include 'app/model/helper/signUpModelRedirect.php';
     $signUPFail= new signUpModelRedirect();
-    unset($_SESSION["redirectModel"]);
+   // unset($_SESSION['redirectModel']);
+
 ?>
 <!-- sign up fail end -->
 
