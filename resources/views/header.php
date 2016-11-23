@@ -16,7 +16,14 @@
                     <li class="active button-active"><a href="#">Home</a></li>
                     <li><a class="menu-link" href="#">Add Post</a></li>
                     <li><a class="menu-link" href="#">Contect Us</a></li>
+                    <?php
+                    if(!isset($_SESSION['log_in_message'])){ ?>
                     <li><a class="menu-link"  data-toggle="modal" data-target="#sign-up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                   <?php }else{ ?>
+                        <li><a class="menu-link"href="http/controller/logOutController.php" ><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                    <?php   } ?>
+
+
                 </ul>
             </div>
         </div>

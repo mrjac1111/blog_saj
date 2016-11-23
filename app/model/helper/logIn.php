@@ -33,13 +33,13 @@ class logIn
                 $_SESSION['user_gender']=$user_gender;
                echo  $_SESSION['log_in_message']='loginSuccessaly';
 
-
+                header('Location: ../../index.php');
 
 
             }else{
-              echo  $_SESSION['log_in_message']='loginIsNotSuccessaly';
+              echo  $_SESSION['log_in_error_message']='login Is NotSuccessaly';
+                header('Location: ../../index.php');
             }
-            die;
             /*if ($this->connection->query($qry) ==0) {
 
 
