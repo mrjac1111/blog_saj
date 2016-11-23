@@ -19,7 +19,11 @@ class emailValidation
     function email(){
         if (empty($_POST["email"])) {
             echo $this->emailErr = "Email is required";
-            $_SESSION["emailErr"] = $this->emailErr;
+            if (!empty($_POST['requestFromSignUp']=='requestFromSignUp')){
+            $_SESSION["emailErr"] = $this->emailErr;}else{
+                $_SESSION["loginEmailErr"] = $this->emailErr;
+            }
+
 
             $this->insertion=0;
         } else {
@@ -27,8 +31,10 @@ class emailValidation
             // check if e-mail address is well-formed
             if (!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
                 echo $this->emailErr = "Invalid email format";
-                $_SESSION["emailErr"] = $this->emailErr;
-                $this->insertion=0;
+                if (!empty($_POST['requestFromSignUp']=='requestFromSignUp')){
+                    $_SESSION["emailErr"] = $this->emailErr;}else{
+                    $_SESSION["loginEmailErr"] = $this->emailErr;
+                }    $this->insertion=0;
             }
             else {
 
@@ -39,8 +45,10 @@ class emailValidation
                     $row = mysqli_fetch_assoc($result);
                     if(isset($row['email'])){
                         echo $this->emailErr = "Email is already exist ,Try another";
-                        $_SESSION["emailErr"] = $this->emailErr;
-                        $this->insertion=0;
+                        if (!empty($_POST['requestFromSignUp']=='requestFromSignUp')){
+                            $_SESSION["emailErr"] = $this->emailErr;}else{
+                            $_SESSION["loginEmailErr"] = $this->emailErr;
+                        }$this->insertion=0;
 
                     }else
                         if(isset($_SESSION['emailErr']))

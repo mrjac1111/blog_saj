@@ -37,7 +37,7 @@ class logIn
 
 
             }else{
-              echo  $_SESSION['log_in_error_message']='login Is NotSuccessaly';
+              echo  $_SESSION['log_in_error_message']='Please Check Email And Password';
                 header('Location: ../../index.php');
             }
             /*if ($this->connection->query($qry) ==0) {

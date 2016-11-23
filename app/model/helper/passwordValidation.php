@@ -50,25 +50,36 @@ class passwordValidation
             $this->password = $this->testInput->test_input($_POST["password"]);
             if (strlen($_POST["password"]) <= '8') {
                 echo  $this->passwordErr = "Your Password Must Contain At Least 8 Characters!";
-                $_SESSION["passwordErr"] = $this->passwordErr;
+                if (!empty($_POST['requestFromSignUp']=='requestFromSignUp')){
+                    $_SESSION["passwordErr"] = $this->passwordErr;}else{
+                    $_SESSION["loginPasswordErr"] = $this->emailErr;
+                }
                 $this->passwordUnset=1;
                 $this->insertion=0;
             } elseif (!preg_match("#[0-9]+#", $this->password)) {
                 echo $this->passwordErr = "Your Password Must Contain At Least 1 Number!";
-                $_SESSION["passwordErr"] = $this->passwordErr;
-                $this->insertion=0;
+                if (!empty($_POST['requestFromSignUp']=='requestFromSignUp')){
+                    $_SESSION["passwordErr"] = $this->passwordErr;}else{
+                    $_SESSION["loginPasswordErr"] = $this->passwordErr;
+                }                $this->insertion=0;
             } elseif (!preg_match("#[A-Z]+#", $this->password)) {
                 echo $this->passwordErr = "Your Password Must Contain At Least 1 Capital Letter!";
-                $_SESSION["passwordErr"] = $this->passwordErr;
-                $this->insertion=0;
+                if (!empty($_POST['requestFromSignUp']=='requestFromSignUp')){
+                    $_SESSION["passwordErr"] = $this->passwordErr;}else{
+                    $_SESSION["loginPasswordErr"] = $this->passwordErr;
+                }                $this->insertion=0;
             } elseif (!preg_match("#[a-z]+#", $this->password)) {
                 echo $this->passwordErr = "Your Password Must Contain At Least 1 Lowercase Letter!";
-                $_SESSION["passwordErr"] = $this->passwordErr;
-                $this->insertion=0;
+                if (!empty($_POST['requestFromSignUp']=='requestFromSignUp')){
+                    $_SESSION["passwordErr"] = $this->passwordErr;}else{
+                    $_SESSION["loginPasswordErr"] = $this->passwordErr;
+                }                $this->insertion=0;
             }} else {
             echo $this->passwordErr = "Please Check You've Entered Password";
-            $_SESSION["passwordErr"] = $this->passwordErr;
-            $this->insertion=0;
+            if (!empty($_POST['requestFromSignUp']=='requestFromSignUp')){
+                $_SESSION["passwordErr"] = $this->passwordErr;}else{
+                $_SESSION["loginPasswordErr"] = $this->passwordErr;
+            }            $this->insertion=0;
         }
         return $this->password;
     }

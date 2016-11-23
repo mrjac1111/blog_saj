@@ -20,7 +20,11 @@
 
             </div>
         </form>
-        <!-- End of Login Form -->
+            <p class="sign-up-err"><?php if(isset($_SESSION["loginEmailErr"])){echo $_SESSION["loginEmailErr"];unset($_SESSION["loginEmailErr"]);} ?></p>
+            <p class="sign-up-err"><?php if(isset($_SESSION["loginPasswordErr"])){echo $_SESSION["loginPasswordErr"];unset($_SESSION["loginPasswordErr"]);} ?></p>
+            <p class="sign-up-err"><?php if(isset($_SESSION["log_in_error_message"])){echo $_SESSION["log_in_error_message"];unset($_SESSION["log_in_error_message"]);} ?></p>
+
+            <!-- End of Login Form -->
   <?php      }else{
              $user_profile=$_SESSION['user_profile_image'];
             $user_name=$_SESSION['user_first_name']." ".$_SESSION['user_last_name']
