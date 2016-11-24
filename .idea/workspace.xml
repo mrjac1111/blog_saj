@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b8c3f05-cdf3-4430-8519-206a0e516419" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/helper/addPost.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/helper/descriptionValidation.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/helper/redirectModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/helper/titleValidation.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/http/controller/addPostController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/add-post-model.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/model/helper/signUpModelRedirect.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/classes/signUpValidation.php" afterPath="$PROJECT_DIR$/app/model/classes/signUpValidation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/helper/imageValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/imageValidation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/helper/signUp.php" afterPath="$PROJECT_DIR$/app/model/helper/signUp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/header.php" afterPath="$PROJECT_DIR$/resources/views/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/sign-up-model.php" afterPath="$PROJECT_DIR$/resources/views/sign-up-model.php" />
     </list>
     <ignored path="saj_blogeer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,7 +56,7 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46811596">
+            <state vertical-scroll-proportion="0.72098213">
               <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding />
             </state>
@@ -475,7 +462,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23782235" sideWeight="0.4878049" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -483,7 +470,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.49390244" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266129" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3252688" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22473605" sideWeight="0.5121951" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -886,7 +873,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46811596">
+        <state vertical-scroll-proportion="0.72098213">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding />
         </state>
