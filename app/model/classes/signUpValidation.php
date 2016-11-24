@@ -89,7 +89,7 @@ if($this->isFirstNameValid&&$this->isLastNameValid&&$this->isEmailValid&&$this->
 else {
     echo "Insertion aaa Failed";
     $this->showErrOnModel = "ValidationErr";
-    $_SESSION["redirectModel"] = $this->showErrOnModel;
+    $_SESSION["signUpRedirectModel"] = $this->showErrOnModel;
     header('Location: ../../index.php?firstName=' . $this->firstName . '&lastName=' . $this->lastName . '&email=' . $this->email . '&gender=' . $this->gender);
 }
 

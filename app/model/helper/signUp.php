@@ -19,7 +19,7 @@ if(!isset($_SESSION["SignUpSuccessfully"])){
         if ($this->connection->query($sql) === TRUE) {
              echo $this->signUpSuccessfully="sign Up Successfully";
             $_SESSION["SignUpSuccessfully"]=$this->signUpSuccessfully;
-            $_SESSION["redirectModel"]=$this->signUpSuccessfully;
+            $_SESSION["signUpRedirectModel"]=$this->signUpSuccessfully;
               header('Location: ../../index.php');
 
            }else {
@@ -32,7 +32,7 @@ if(!isset($_SESSION["SignUpSuccessfully"])){
             {
                 $this->signUpSuccessfully="You Already Sign Up";
                 $_SESSION["SignUpSuccessfully"]=$this->signUpSuccessfully;
-                $_SESSION["redirectModel"]=$this->signUpSuccessfully;
+                $_SESSION["signUpRedirectModel"]=$this->signUpSuccessfully;
                 header('Location: ../../index.php');
 
             }

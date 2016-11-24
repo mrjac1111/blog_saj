@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b8c3f05-cdf3-4430-8519-206a0e516419" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/helper/emailValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/emailValidation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/helper/logIn.php" afterPath="$PROJECT_DIR$/app/model/helper/logIn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/helper/passwordValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/passwordValidation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/post-page-login.php" afterPath="$PROJECT_DIR$/resources/views/post-page-login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/helper/addPost.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/helper/descriptionValidation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/helper/redirectModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/helper/titleValidation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/http/controller/addPostController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/add-post-model.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/model/helper/signUpModelRedirect.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/classes/signUpValidation.php" afterPath="$PROJECT_DIR$/app/model/classes/signUpValidation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/helper/imageValidation.php" afterPath="$PROJECT_DIR$/app/model/helper/imageValidation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/helper/signUp.php" afterPath="$PROJECT_DIR$/app/model/helper/signUp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/header.php" afterPath="$PROJECT_DIR$/resources/views/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/sign-up-model.php" afterPath="$PROJECT_DIR$/resources/views/sign-up-model.php" />
     </list>
     <ignored path="saj_blogeer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +40,38 @@
       <file leaf-file-name="signUp.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/helper/signUp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.963636">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.807693">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <marker date="1479492099451" expanded="true" signature="398:557" placeholder="INSERT INTO signup... " />
+                <marker date="1480014234332" expanded="true" signature="398:557" placeholder="INSERT INTO signup... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add-post-model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/add-post-model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.26923">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.46811596">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -42,85 +79,55 @@
       <file leaf-file-name="signUpValidation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/classes/signUpValidation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="55" column="49" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+            <state vertical-scroll-proportion="-22.615385">
+              <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginValidation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/classes/loginValidation.php">
+      <file leaf-file-name="addPostValidation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/classes/addPostValidation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.423077">
-              <caret line="59" column="69" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
+            <state vertical-scroll-proportion="-5.836364">
+              <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post-page-login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/post-page-login.php">
+      <file leaf-file-name="redirectModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/helper/redirectModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307">
-              <caret line="24" column="162" selection-start-line="24" selection-start-column="162" selection-end-line="24" selection-end-column="162" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logIn.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/model/helper/logIn.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73913044">
-              <caret line="39" column="86" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
+            <state vertical-scroll-proportion="-11.115385">
+              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
               <folding>
-                <marker date="1479922134293" expanded="true" signature="328:395" placeholder="SELECT * fro... signup" />
+                <marker date="1480014183712" expanded="true" signature="263:353" placeholder="..." />
+                <marker date="1480014183712" expanded="true" signature="294:342" placeholder="{...}" />
+                <marker date="1480014183712" expanded="true" signature="616:707" placeholder="..." />
+                <marker date="1480014183712" expanded="true" signature="647:696" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="passwordValidation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/helper/passwordValidation.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.73077">
-              <caret line="80" column="66" selection-start-line="80" selection-start-column="66" selection-end-line="80" selection-end-column="66" />
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imageValidation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/helper/imageValidation.php">
+      <file leaf-file-name="addPost.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/helper/addPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="emailValidation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/helper/emailValidation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.7272725">
-              <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
-                <marker date="1479920855432" expanded="true" signature="1480:1531" placeholder="select email... signup" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signUpModelRedirect.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/helper/signUpModelRedirect.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding>
-                <marker date="1479919114723" expanded="true" signature="266:356" placeholder="..." />
-                <marker date="1479919114723" expanded="true" signature="297:345" placeholder="{...}" />
+                <marker date="1480014619400" expanded="true" signature="339:450" placeholder="INSERT INTO signup... " />
               </folding>
             </state>
           </provider>
@@ -129,8 +136,18 @@
       <file leaf-file-name="sign-up-model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/sign-up-model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231">
-              <caret line="18" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.230769">
+              <caret line="45" column="124" selection-start-line="45" selection-start-column="124" selection-end-line="45" selection-end-column="203" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imageValidation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/helper/imageValidation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.038462">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -151,16 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/post-page-pagination.php" />
-        <option value="$PROJECT_DIR$/views/footer.php" />
-        <option value="$PROJECT_DIR$/views/comment-model.php" />
-        <option value="$PROJECT_DIR$/views/likes-model.php" />
-        <option value="$PROJECT_DIR$/views/views-model.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/lib/signUpFail.php" />
-        <option value="$PROJECT_DIR$/views/sign-up-model.php" />
-        <option value="$PROJECT_DIR$/views/start-of-views.php" />
-        <option value="$PROJECT_DIR$/lib/helper/getConnection.php" />
         <option value="$PROJECT_DIR$/lib/Connection.php" />
         <option value="$PROJECT_DIR$/lib/signUp.php" />
         <option value="$PROJECT_DIR$/lib/helper/geterSeter.php" />
@@ -183,25 +190,35 @@
         <option value="$PROJECT_DIR$/app/model/helper/signupDataInsert.php" />
         <option value="$PROJECT_DIR$/http/controller/signUPController.php" />
         <option value="$PROJECT_DIR$/app/model/helper/nameValidation.php" />
-        <option value="$PROJECT_DIR$/app/model/helper/imageValidation.php" />
         <option value="$PROJECT_DIR$/app/model/helper/sexValidation.php" />
-        <option value="$PROJECT_DIR$/app/model/helper/signUp.php" />
-        <option value="$PROJECT_DIR$/app/model/classes/signUpValidation.php" />
         <option value="$PROJECT_DIR$/http/controller/logInController.php" />
         <option value="$PROJECT_DIR$/config/Connection.php" />
         <option value="$PROJECT_DIR$/app/model/helper/getConnection.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/http/controller/logOutController.php" />
         <option value="$PROJECT_DIR$/app/model/classes/logOut.php" />
-        <option value="$PROJECT_DIR$/resources/views/header.php" />
-        <option value="$PROJECT_DIR$/app/model/helper/signUpModelRedirect.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/model/classes/loginValidation.php" />
-        <option value="$PROJECT_DIR$/resources/views/sign-up-model.php" />
         <option value="$PROJECT_DIR$/app/model/helper/emailValidation.php" />
         <option value="$PROJECT_DIR$/app/model/helper/passwordValidation.php" />
         <option value="$PROJECT_DIR$/resources/views/post-page-login.php" />
         <option value="$PROJECT_DIR$/app/model/helper/logIn.php" />
+        <option value="$PROJECT_DIR$/resources/views/sign-up-model.php" />
+        <option value="$PROJECT_DIR$/http/controller/addPostController.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/titleValidation.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/textareaValidation.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/description.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/descriptionValidation.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/AddPost.php" />
+        <option value="$PROJECT_DIR$/app/model/classes/addPostValidation.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/imageValidation.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/signUpModelRedirect.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/redirectModel.php" />
+        <option value="$PROJECT_DIR$/app/model/classes/signUpValidation.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/signUp.php" />
+        <option value="$PROJECT_DIR$/app/model/helper/addPost.php" />
+        <option value="$PROJECT_DIR$/resources/views/add-post-model.php" />
+        <option value="$PROJECT_DIR$/resources/views/header.php" />
       </list>
     </option>
   </component>
@@ -245,6 +262,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,6 +296,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saj_blogeer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog_saj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saj_blogeer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog_saj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -346,7 +396,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,13 +477,13 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23424068" sideWeight="0.4878049" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23782235" sideWeight="0.4878049" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.49390244" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266129" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22473605" sideWeight="0.5121951" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -482,7 +531,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/header.php</url>
-          <line>18</line>
+          <line>21</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -490,55 +539,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="310" column="60" selection-start-line="310" selection-start-column="60" selection-end-line="310" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/freebie-footer-templates/css/footer-distributed-with-address-and-phones.css" />
     <entry file="file://$USER_HOME$/Downloads/freebie-footer-templates/footer-distributed-with-address-and-phones.html" />
     <entry file="file://$PROJECT_DIR$/../saj_blog/index.php" />
@@ -618,26 +618,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/helper/nameValidation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/helper/sexValidation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/helper/signupDataInsert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -656,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/http/controller/signUPController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/Connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -675,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,27 +676,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/http/controller/logInController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/http/controller/logOutController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
           <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,62 +691,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/helper/imageValidation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/classes/signUpValidation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="55" column="49" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/helper/signUp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.963636">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <marker date="1479492099451" expanded="true" signature="398:557" placeholder="INSERT INTO signup... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/helper/signUpModelRedirect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding>
-            <marker date="1479919114723" expanded="true" signature="266:356" placeholder="..." />
-            <marker date="1479919114723" expanded="true" signature="297:345" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/sign-up-model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/helper/passwordValidation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.73077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="80" column="66" selection-start-line="80" selection-start-column="66" selection-end-line="80" selection-end-column="66" />
           <folding />
         </state>
@@ -795,7 +701,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/helper/emailValidation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7272725">
+        <state vertical-scroll-proportion="0.0">
           <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
           <folding>
             <marker date="1479920855432" expanded="true" signature="1480:1531" placeholder="select email... signup" />
@@ -803,9 +709,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/http/controller/logInController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="4" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/logIn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24347825">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <marker date="1479922134293" expanded="true" signature="328:395" placeholder="SELECT * fro... signup" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/post-page-login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307">
+        <state vertical-scroll-proportion="0.5565217">
           <caret line="24" column="162" selection-start-line="24" selection-start-column="162" selection-end-line="24" selection-end-column="162" />
           <folding />
         </state>
@@ -813,19 +737,158 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/classes/loginValidation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.423077">
+        <state vertical-scroll-proportion="0.43333334">
           <caret line="59" column="69" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/helper/logIn.php">
+    <entry file="file://$PROJECT_DIR$/http/controller/signUPController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73913044">
-          <caret line="39" column="86" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
+        <state vertical-scroll-proportion="0.09855072">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/post/1480005606al-quran-muslim-islam-holy-book-prayer-512.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/controller/addPostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/descriptionValidation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.653847">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/titleValidation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.192308">
+          <caret line="37" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/signupDataInsert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/nameValidation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.615385">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="66" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/imageValidation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/redirectModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding>
-            <marker date="1479922134293" expanded="true" signature="328:395" placeholder="SELECT * fro... signup" />
+            <marker date="1480014183712" expanded="true" signature="263:353" placeholder="..." />
+            <marker date="1480014183712" expanded="true" signature="294:342" placeholder="{...}" />
+            <marker date="1480014183712" expanded="true" signature="616:707" placeholder="..." />
+            <marker date="1480014183712" expanded="true" signature="647:696" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/classes/signUpValidation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.615385">
+          <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/signUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.807693">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1480014234332" expanded="true" signature="398:557" placeholder="INSERT INTO signup... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/helper/addPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <marker date="1480014619400" expanded="true" signature="339:450" placeholder="INSERT INTO signup... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/classes/addPostValidation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.836364">
+          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sign-up-model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="45" column="124" selection-start-line="45" selection-start-column="124" selection-end-line="45" selection-end-column="203" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/add-post-model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.26923">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46811596">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

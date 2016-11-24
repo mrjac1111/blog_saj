@@ -5,7 +5,7 @@
 
         <!-- Modal content-->
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" style="border-width: 10px">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title comment-title"><i class="glyphicon glyphicon-globe"></i> Sign Up It's Free</h4>
             </div>
@@ -86,7 +86,7 @@
 
 
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer" style="border-width: 10px">
 
                 <button type="button" class="btn btn-default comment-close-btn" data-dismiss="modal">Close</button>
             </div>

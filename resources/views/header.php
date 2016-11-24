@@ -14,7 +14,10 @@
 
                 <ul class="nav navbar-nav navbar-right  ">
                     <li class="active button-active"><a href="#">Home</a></li>
-                    <li><a class="menu-link" href="#">Add Post</a></li>
+                    <?php
+                    if(isset($_SESSION['log_in_message'])){ ?>
+                        <li><a class="menu-link" data-toggle="modal" data-target="#add-post">Add Post</a></li>
+                    <?php }?>
                     <li><a class="menu-link" href="#">Contect Us</a></li>
                     <?php
                     if(!isset($_SESSION['log_in_message'])){ ?>

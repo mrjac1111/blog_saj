@@ -3,20 +3,26 @@
 
 class imageValidation
 {
-    protected $profileImage;
+    protected $image;
     protected $getProfileImageNameForSignupModel;
-    protected $profileImageErr;
+    protected $imageErr;
     protected $insertion=1;
     private $otherFielsdError;
 
-    function image($otherFielsdError){
+    function image($otherFielsdError,$requestFrom){
         $this->otherFielsdError= $otherFielsdError;
 
-        $target_dir = "../../public/img/profile/";
+        if($requestFrom=="requestFromSignUp"){
+            $target_dir = "../../public/img/profile/";
+
+        }else if($requestFrom=="requestFromAddPost"){
+            $target_dir = "../../public/img/post/";
+
+        }
 
         $this->getProfileImageNameForSignupModel=basename($_FILES["input-file-preview"]["name"]);
-        $this->profileImage=strtotime("now"). basename($_FILES["input-file-preview"]["name"]);
-        $target_file = $target_dir .$this->profileImage;
+        $this->image=strtotime("now"). basename($_FILES["input-file-preview"]["name"]);
+        $target_file = $target_dir .$this->image;
         // Instantiating DateTime Object
 
         $uploadOk = 1;
@@ -28,8 +34,15 @@ class imageValidation
                 echo "File is an image - " . $check["mime"] . ".";
                 $uploadOk = 1;
             } else {
-                echo  $this->profileImageErr= "File is not an image.";
-                $_SESSION["profileImageErr"] = $this->profileImageErr;
+                echo  $this->imageErr= "File is not an image.";
+                if($requestFrom=="requestFromSignUp"){
+                    $_SESSION["profileImageErr"] = $this->imageErr;
+
+                }else if($requestFrom=="requestFromAddPost"){
+                    $_SESSION["postImageErr"] = $this->imageErr;
+
+                }
+
 
                 $this->insertion=0;
                 $uploadOk = 0;
@@ -37,16 +50,28 @@ class imageValidation
         }else
 // Check if file already exists
             if (file_exists($target_file)) {
-                echo $this->profileImageErr= "File already exists.";
-                $_SESSION["profileImageErr"] = $this->profileImageErr;
+                echo $this->imageErr= "File already exists.";
+                if($requestFrom=="requestFromSignUp"){
+                    $_SESSION["profileImageErr"] = $this->imageErr;
+
+                }else if($requestFrom=="requestFromAddPost"){
+                    $_SESSION["postImageErr"] = $this->imageErr;
+
+                }
 
                 $this->insertion=0;
                 $uploadOk = 0;
             }else
 // Check file size
                 if ($_FILES["input-file-preview"]["size"] > 500000) {
-                    echo $this->profileImageErr= "Your file is too large.";
-                    $_SESSION["profileImageErr"] = $this->profileImageErr;
+                    echo $this->imageErr= "Your file is too large.";
+                    if($requestFrom=="requestFromSignUp"){
+                        $_SESSION["profileImageErr"] = $this->imageErr;
+
+                    }else if($requestFrom=="requestFromAddPost"){
+                        $_SESSION["postImageErr"] = $this->imageErr;
+
+                    }
 
                     $this->insertion=0;
                     $uploadOk = 0;
@@ -54,16 +79,28 @@ class imageValidation
 // Allow certain file formats
                     if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
                         && $imageFileType != "gif" ) {
-                        echo $this->profileImageErr= " Only JPG, JPEG, PNG & GIF files are allowed.";
-                        $_SESSION["profileImageErr"] = $this->profileImageErr;
+                        echo $this->imageErr= " Only JPG, JPEG, PNG & GIF files are allowed.";
+                        if($requestFrom=="requestFromSignUp"){
+                            $_SESSION["profileImageErr"] = $this->imageErr;
+
+                        }else if($requestFrom=="requestFromAddPost"){
+                            $_SESSION["postImageErr"] = $this->imageErr;
+
+                        }
 
                         $this->insertion=0;
                         $uploadOk = 0;
                     }else
 // Check if $uploadOk is set to 0 by an error
                         if ($uploadOk == 0) {
-                            echo $this->profileImageErr="Sorry, your file was not uploaded.";
-                            $_SESSION["profileImageErr"] = $this->profileImageErr;
+                            echo $this->imageErr="Sorry, your file was not uploaded.";
+                            if($requestFrom=="requestFromSignUp"){
+                                $_SESSION["profileImageErr"] = $this->imageErr;
+
+                            }else if($requestFrom=="requestFromAddPost"){
+                                $_SESSION["postImageErr"] = $this->imageErr;
+
+                            }
 
                             $this->insertion=0;
 // if everything is ok, try to upload file
@@ -73,22 +110,36 @@ class imageValidation
                                     echo "The file ". basename( $_FILES["input-file-preview"]["name"]). " has been uploaded.";
                                     if (isset($_SESSION["profileImageErr"])){
                                         unset($_SESSION["profileImageErr"]);
+                                    }else  if (isset($_SESSION["postImageErr"])){
+                                        unset($_SESSION["postImageErr"]);
                                     }
 
                                 } else {
                                     echo $this->profileImageErr="Sorry, there was an error uploading your file.";
-                                    $_SESSION["profileImageErr"] = $this->profileImageErr;
+                                    if($requestFrom=="requestFromSignUp"){
+                                        $_SESSION["profileImageErr"] = $this->imageErr;
+
+                                    }else if($requestFrom=="requestFromAddPost"){
+                                        $_SESSION["postImageErr"] = $this->imageErr;
+
+                                    }
                                     $this->insertion=0;
                                 }
                             }else{
-                                echo $this->profileImageErr="Other fields are required";
-                                $_SESSION["profileImageErr"] = $this->profileImageErr;
+                                echo $this->imageErr="Other fields are required";
+                                if($requestFrom=="requestFromSignUp"){
+                                    $_SESSION["profileImageErr"] = $this->imageErr;
+
+                                }else if($requestFrom=="requestFromAddPost"){
+                                    $_SESSION["postImageErr"] = $this->imageErr;
+
+                                }
                                 $this->insertion=0;
 
                             }
 
 
-        return $this->profileImage;
+        return $this->image;
     }
 
     function  insertionError(){

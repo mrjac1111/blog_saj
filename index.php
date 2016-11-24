@@ -1,6 +1,3 @@
-<?php if(isset($_SESSION['redirectModel'])){
-    echo 'redirect is set';
-}//session_start(); ?>
 
 <?php include 'resources/views/start-of-views.php'; ?>
 <?php include 'resources/views/header.php'; ?>
@@ -14,13 +11,16 @@
 <?php include 'resources/views/views-model.php'; ?>
 <?php include 'resources/views/likes-model.php'; ?>
 <?php include 'resources/views/sign-up-model.php'; ?>
+<?php include 'resources/views/add-post-model.php'; ?>
 <?php include 'resources/views/end-of-views.php'; ?>
 
 <!-- if sign up fail  -->
 
-<?php include 'app/model/helper/signUpModelRedirect.php';
-    $signUPFail= new signUpModelRedirect();
-   // unset($_SESSION['redirectModel']);
+<?php include 'app/model/helper/redirectModel.php';
+    $ifValidationFail= new redirectModel();
+    $signUpRedirct=$ifValidationFail->signUp();
+    $addPostRedirct=$ifValidationFail->addPost();
+
 
 ?>
 <!-- sign up fail end -->
