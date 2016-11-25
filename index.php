@@ -1,4 +1,11 @@
 
+<?php
+
+include  'app/model/classes/homePost.php';
+
+$homePost= new homePost();
+$homePost->Post();
+?>
 <?php include 'resources/views/start-of-views.php'; ?>
 <?php include 'resources/views/header.php'; ?>
 <?php include 'resources/views/header-social-bar.php'; ?>

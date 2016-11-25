@@ -5,9 +5,7 @@ class addPost{
 
     private $connection;
     private $addPostSuccessfully;
-    private $userId;
     private $tital;
-    private $postImage;
     private $description;
 
 
