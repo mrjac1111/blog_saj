@@ -5,7 +5,7 @@ class addPost{
 
     private $connection;
     private $addPostSuccessfully;
-    private $tital;
+    private $title;
     private $description;
 
 
@@ -16,7 +16,7 @@ class addPost{
     }
 
     function insert( $userId,$title,$description,$postImage){
-            $this->tital = mysqli_real_escape_string($this->connection,$title);
+            $this->title = mysqli_real_escape_string($this->connection,$title);
             $this->description = mysqli_real_escape_string($this->connection,$description);
 
             $sql = "INSERT INTO post (user_Id,title,description,postImage) VALUES ('$userId', '$this->title','$this->description','$postImage')";

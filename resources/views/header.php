@@ -26,7 +26,15 @@
                         <li><a class="menu-link"href="http/controller/logOutController.php" ><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
                     <?php   } ?>
 
+                    <?php      if(isset($_SESSION['user_profile_image'])){
+                        $user_profile=$_SESSION['user_profile_image'];
+                        $user_name=$_SESSION['user_first_name']." ".$_SESSION['user_last_name']
+                        ?>
 
+
+                            <li><a href="#"><img src="public/img/profile/<?php echo $user_profile?>" class="img-circle" width="35" height="35" alt="Cinque Terre" ></a></li>
+
+                    <?php } ?>
                 </ul>
             </div>
         </div>

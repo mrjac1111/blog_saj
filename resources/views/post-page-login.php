@@ -25,13 +25,5 @@
             <p class="sign-up-err"><?php if(isset($_SESSION["log_in_error_message"])){echo $_SESSION["log_in_error_message"];unset($_SESSION["log_in_error_message"]);} ?></p>
 
             <!-- End of Login Form -->
-  <?php      }else{
-             $user_profile=$_SESSION['user_profile_image'];
-            $user_name=$_SESSION['user_first_name']." ".$_SESSION['user_last_name']
-?>
 
-             <div class="col-md-12 log-in">
-                    <a href="#"><img src="public/img/profile/<?php echo $user_profile?>" class="img-responsive" width="100%" alt="Cinque Terre" ></a>
-                    <div class="col-md-12 user-name" style="padding-top: 15px;color: #1995AD"> <p><?php echo $user_name?></p></div>
-                    </div>
         <?php } ?>
