@@ -13,7 +13,8 @@ class imageValidation
         $this->otherFielsdError= $otherFielsdError;
 
         if($requestFrom=="requestFromSignUp"){
-            $target_dir = "../../public/img/profile/";
+           $target_dir = "../../public/img/profile/";
+            
 
         }else if($requestFrom=="requestFromAddPost"){
             $target_dir = "../../public/img/post/";

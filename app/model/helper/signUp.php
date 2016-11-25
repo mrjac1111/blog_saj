@@ -15,7 +15,7 @@ class signUP{
     function insert( $firstName,$lastName,$email,$password,$profileImage,$gender){
 
 if(!isset($_SESSION["SignUpSuccessfully"])){
-        $sql = "INSERT INTO signup (firstName,lastName,email, password, profileImage,gender) VALUES ('$firstName', '$lastName','$email','$password', '$profileImage','$gender')";
+        $sql = "INSERT INTO user (firstName,lastName,email, password, profileImage,gender) VALUES ('$firstName', '$lastName','$email','$password', '$profileImage','$gender')";
         if ($this->connection->query($sql) === TRUE) {
              echo $this->signUpSuccessfully="sign Up Successfully";
             $_SESSION["SignUpSuccessfully"]=$this->signUpSuccessfully;

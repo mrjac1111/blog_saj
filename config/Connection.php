@@ -9,7 +9,7 @@ class Connection
     protected $db_host;
     public $connect_db;
     function __construct(){
-        $this->db_name="saj_blog";
+        $this->db_name="blog_saj";
         $this->db_user="root";
         $this->db_password="";
         $this->db_host="localhost";

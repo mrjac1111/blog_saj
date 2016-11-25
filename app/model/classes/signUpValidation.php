@@ -46,12 +46,16 @@ class signUpValidation
     private $password;
     protected $gender;
     protected $profileImage;
+    private $requestFrom;
 
     function __construct()
     {
     }
     function  validation(){
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+            $this->requestFrom=$_POST['requestFromSignUp'];
+
             $this->nameValidation= new nameValidation();
              $this->firstName= $this->nameValidation->firstNameValidation();
             echo $this->isFirstNameValid=$this->nameValidation->insertionError();
@@ -76,7 +80,7 @@ class signUpValidation
             }
 
             $this->imageValidation=new imageValidation();
-            $this->profileImage=$this->imageValidation->image($this->imageIsSetIfOtherValidationAreTrue);
+            $this->profileImage=$this->imageValidation->image($this->imageIsSetIfOtherValidationAreTrue,$this->requestFrom);
             $this->getProfileImageNameForSignupModel=$this->imageValidation->getProfileImageNameForSignupModel();
            echo $this->isImageValid=$this->imageValidation->insertionError();
      

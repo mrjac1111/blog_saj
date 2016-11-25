@@ -13,7 +13,7 @@ class logIn
     function userLogIn($email,$password){
 
         if(!isset($_SESSION["logInSuccessfully"])){
-             $qry = "SELECT * from signup WHERE email='$email' AND  password='$password'";
+             $qry = "SELECT * from user WHERE email='$email' AND  password='$password'";
                $row= mysqli_query($this->connection,$qry);
             print_r($row);
            $is_user_exist= mysqli_num_rows($row);
@@ -29,11 +29,11 @@ class logIn
                 $_SESSION['user_id']=$user_id;
                 $_SESSION['user_first_name']=$user_first_name;
                 $_SESSION['user_last_name']=$user_last_name;
-                $_SESSION['user_profile_image']=$user_profile_image;
+               echo $_SESSION['user_profile_image']=$user_profile_image;
                 $_SESSION['user_gender']=$user_gender;
                echo  $_SESSION['log_in_message']='loginSuccessaly';
 
-                header('Location: ../../index.php');
+              header('Location: ../../index.php');
 
 
             }else{
