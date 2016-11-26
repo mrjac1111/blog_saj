@@ -13,7 +13,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
 
                 <ul class="nav navbar-nav navbar-right  ">
-                    <li class="active button-active"><a href="#">Home</a></li>
+                    <li class="active button-active"><a href="index.php">Home</a></li>
                     <?php
                     if(isset($_SESSION['log_in_message'])){ ?>
                         <li><a class="menu-link" data-toggle="modal" data-target="#add-post">Add Post</a></li>
@@ -28,11 +28,11 @@
 
                     <?php      if(isset($_SESSION['user_profile_image'])){
                         $user_profile=$_SESSION['user_profile_image'];
-                        $user_name=$_SESSION['user_first_name']." ".$_SESSION['user_last_name']
+                       //$user_name=$_SESSION['user_first_name']." ".$_SESSION['user_last_name']
                         ?>
 
 
-                            <li><a href="#"><img src="public/img/profile/<?php echo $user_profile?>" class="img-circle" width="35" height="35" alt="Cinque Terre" ></a></li>
+                            <li><a href="http/controller/userPostController.php"><img src="public/img/profile/<?php echo $user_profile?>" class="img-circle" width="35" height="35" alt="Cinque Terre" ></a></li>
 
                     <?php } ?>
                 </ul>

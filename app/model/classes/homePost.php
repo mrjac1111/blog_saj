@@ -1,6 +1,5 @@
 <?php
 include 'config/Connection.php';
-
 class homePost
 {
     function __construct()
@@ -15,16 +14,6 @@ class homePost
         $sql = "SELECT * FROM post";
         $result = mysqli_query($this->connection, $sql);
 
-// Fetch all
-       // $fetch_post = mysqli_fetch_assoc($result);
-        /*for($i=0;$i<=$count;$i++){
-            echo $fetch_post['id'];
-            echo $fetch_post['title'];
-            echo $fetch_post['description'];
-            echo $fetch_post['postImage'];
-        }*/
-
-    //
         return $result;
 
     }
@@ -34,5 +23,12 @@ class homePost
         return $user;
 
 
+    }
+
+    function userPost(){
+         $user_id=$_SESSION['user_id'];
+       $sql="SELECT * FROM post WHERE user_id='$user_id'";
+            $user_post=mysqli_query($this->connection,$sql);
+        return $user_post;
     }
 }
