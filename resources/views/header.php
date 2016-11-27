@@ -15,9 +15,10 @@
                 <ul class="nav navbar-nav navbar-right  ">
                     <li class="active button-active"><a href="index.php">Home</a></li>
                     <?php
-                    if(isset($_SESSION['log_in_message'])){ ?>
+                    if(isset($_SESSION['log_in_message'])){ if(!isset($_SESSION['roleIsStudent'])){ ?>
+
                         <li><a class="menu-link" data-toggle="modal" data-target="#add-post">Add Post</a></li>
-                    <?php }?>
+                    <?php } } ?>
                     <li><a class="menu-link" href="#">Contect Us</a></li>
                     <?php
                     if(!isset($_SESSION['log_in_message'])){ ?>

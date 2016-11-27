@@ -13,6 +13,7 @@ class redirectModel
 
     function signUp()
     {
+
         if(isset($_SESSION["signUpRedirectModel"])){
 
 

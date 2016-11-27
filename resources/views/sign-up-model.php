@@ -27,7 +27,8 @@
 
                     <input class="form-control " name="email" placeholder="Your Email" type="email" value="<?php if(isset($_GET['email'])){echo $_GET['email'];} ?>"/>
 
-                    <p class="sign-up-err " style="margin-bottom: 20px"><?php if(isset($_SESSION["emailErr"])){echo $_SESSION["emailErr"];unset($_SESSION["emailErr"]);}?></p>
+                    <p class="sign-up-err " style="margin-bottom: 20px"><?php if(isset($_SESSION["emailErr"])){echo $_SESSION["emailErr"];unset($_SESSION["emailErr"]);}
+                        else{echo 'Your password must be contain atleast 8 letters ,one Capital Letter ,one numaric and one special charecter  ';}?></p>
                     <div class="row sign-up-fields-margin">
                         <div class="col-xs-6 col-md-6"  >
                             <input class="form-control" id="password" name="password" placeholder="Password" type="password"
@@ -56,10 +57,12 @@
                         <input type="file"  accept="image/png, image/jpeg, image/gif" name="input-file-preview" /> <!-- rename it -->
                     </div>
                 </span>
-                        </div><!-- /input-group image-preview [TO HERE]-->
+                        </div><!-- /input-
+                        group image-preview [TO HERE]-->
                         <p class="sign-up-err"><?php if(isset($_SESSION["profileImageErr"])){echo $_SESSION["profileImageErr"];unset($_SESSION["profileImageErr"]);}?></p>
 
                     </div>
+
                     <label class="radio-inline sign-up-fields-margin ">
                         <input type="radio" name="sex" id="inlineCheckbox1"<?php if (isset($_GET['gender'])&& $_GET['gender']=="male") echo "checked";?>
                                value="male" />
@@ -74,6 +77,30 @@
                         <p class="sign-up-err"><?php if(isset($_SESSION["sexErr"])){echo $_SESSION["sexErr"];unset($_SESSION["sexErr"]);}?></p>
 
                     </label>
+
+                    <div style="padding-left: 0px;margin-bottom: 20px" class="col-xs-12 col-md-12">
+
+
+                        <select name="role" class="btn btn-default dropdown-toggle">
+                            <option>Select User Role</option>
+                            <?php
+                            $conn = new Connection();
+                            $connection = $conn->getConnection();
+                            $sql='SELECT role From role';
+                            $result = mysqli_query($connection, $sql);
+
+                            while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+
+                                ?>
+                                <option> <?php echo $row['role'] ?> </option>
+
+                            <?php }         $connection->close();
+                            ?>
+
+
+                        </select>
+
+                    </div>
 
                     <br />
                     <br />

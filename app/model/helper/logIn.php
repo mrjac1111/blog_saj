@@ -15,7 +15,6 @@ class logIn
         if(!isset($_SESSION["logInSuccessfully"])){
              $qry = "SELECT * from user WHERE email='$email' AND  password='$password'";
                $row= mysqli_query($this->connection,$qry);
-            print_r($row);
            $is_user_exist= mysqli_num_rows($row);
             if($is_user_exist){
                 //print_r($user);
@@ -33,7 +32,21 @@ class logIn
                 $_SESSION['user_gender']=$user_gender;
                echo  $_SESSION['log_in_message']='loginSuccessaly';
 
-              header('Location: ../../index.php');
+                $sql="SELECT user_role_id FROM user_role WHERE user_id ='$user_id' ";
+                $role_row=mysqli_query($this->connection,$sql);
+                $fetch_user_role=mysqli_fetch_array($role_row);
+                $setUserRoleId=$fetch_user_role['user_role_id'];
+
+                if($setUserRoleId==1){
+                    $_SESSION['roleIsStudent']='roleIsStudent';
+
+                }elseif($setUserRoleId==2){
+                    $_SESSION['roleIsAuther']='roleIsAuther';
+
+                }elseif($setUserRoleId==3){
+                    $_SESSION['roleIsAdmin']='roleIsAdmin';
+                }
+             header('Location: ../../index.php');
 
 
             }else{

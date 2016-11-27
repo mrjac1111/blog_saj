@@ -16,6 +16,16 @@ function userLogOut(){
     if(isset($_SESSION['user_first_name'])){unset($_SESSION['user_first_name']);}
     if(isset($_SESSION['user_last_name'])){unset($_SESSION['user_last_name']);}
     if(isset($_SESSION['user_profile_image'])){unset($_SESSION['user_profile_image']);}
+
+    if(isset($_SESSION['roleIsStudent'])){
+        unset($_SESSION['roleIsStudent']);
+    }else
+        if(isset($_SESSION['roleIsAuther'])){
+            unset($_SESSION['roleIsAuther']);
+        }else
+            if(isset($_SESSION['roleIsAdmin'])){
+                unset($_SESSION['roleIsAdmin']);
+            }
     header('Location: ../../index.php');
 
 }

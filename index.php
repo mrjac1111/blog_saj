@@ -14,10 +14,13 @@
 <?php include 'resources/views/sign-up-model.php'; ?>
 <?php include 'resources/views/add-post-model.php'; ?>
 <?php include 'resources/views/end-of-views.php'; ?>
+<?php //include 'config/Connection.php'; ?>
 
 <!-- if sign up fail  -->
 
 <?php include 'app/model/helper/redirectModel.php';
+
+
     $ifValidationFail= new redirectModel();
     $signUpRedirct=$ifValidationFail->signUp();
     $addPostRedirct=$ifValidationFail->addPost();

@@ -40,7 +40,7 @@ class emailValidation
 
                 // check if user is already exist or not
                 if (!empty($_POST['requestFromSignUp']=='requestFromSignUp')){
-                    $query  ="select email from signup where email='$this->email'";
+                    $query  ="select email from user where email='$this->email'";
                     $result = mysqli_query($this->connection, $query);
                     $row = mysqli_fetch_assoc($result);
                     if(isset($row['email'])){
