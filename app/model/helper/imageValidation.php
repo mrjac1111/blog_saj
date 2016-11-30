@@ -20,9 +20,7 @@ class imageValidation
 
         }else if($requestFrom=="requestFromAddPost"||$requestFromUpdatePost=="requst-from-user-post"){
            echo $target_dir = "../../public/img/post/";
-
         }
-
         $this->getProfileImageNameForSignupModel=basename($_FILES["input-file-preview"]["name"]);
         $this->image=strtotime("now"). basename($_FILES["input-file-preview"]["name"]);
         $target_file = $target_dir .$this->image;

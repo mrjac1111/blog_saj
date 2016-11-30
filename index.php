@@ -26,7 +26,7 @@
     $signUpRedirct=$request->signUp(); //sign up fail its validation
     $addPostRedirct=$request->addPost(); // add post fail its validation
 if(isset($_GET['id']))echo $_GET['id'];
-    $PostRedirct=$request->CRUDPost($_GET['id'],$_GET['request']);
+    $PostRedirct=$request->CRUDPost(isset($_GET['id']),isset($_GET['request']));
 
 
 ?>

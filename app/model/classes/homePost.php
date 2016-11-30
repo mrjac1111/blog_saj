@@ -36,5 +36,10 @@ class homePost
         return $user_post;
 
     }
+    function fetchPost($post_id){
+        $sql="SELECT * FROM post WHERE id='$post_id'ORDER BY id LIMIT 1";
+        $fetch_post=mysqli_query($this->connection,$sql);
+        return $fetch_post;
+    }
 
 }

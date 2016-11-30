@@ -21,8 +21,8 @@ if(isset($_SESSION['UserPost'])||isset($_GET['user'])=="requst-from-user-post"){
         </div>
         <div class="col-md-8 post-content">
 
-            <h3 style="height: 35px"><?php echo $row['title'] ?></h3>
-            <p style="height: 85px;overflow: hidden">   <?php echo $row['description']; ?></p>
+            <h3 style="height: 25px;overflow: hidden; "><?php echo $row['title'] ?></h3>
+            <p style="height: 125px;overflow: hidden">   <?php echo $row['description']; ?></p>
             <div class="col-md-12 post-btn " >
                 <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 45px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-user-post"; ?>">Read More</a>
                 <a type="button" name="likes"  class="btn btn-default views" style="margin-right: 45px ;margin-left: 12px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-likes&user=requst-from-user-post"; ?>">Likes</a>
@@ -52,10 +52,10 @@ $user_name=$user_first_name ." ".$user_last_name;
             <div class="col-md-12 user-name"> <p><?php echo $user_name ?></p></div>
         </div>
         <div class="col-md-8 post-content">
-            <?php  echo $user_post_id=$row['id']; ?>
+            <?php   $user_post_id=$row['id']; ?>
 
-            <h3 style="height: 35px"><?php echo $row['title'] ?></h3>
-            <p style="height: 85px;overflow: hidden">   <?php echo $row['description']; ?></p>
+            <h3 style="height: 25px;overflow: hidden; "><?php echo $row['title'] ?></h3>
+            <p style="height: 125px;overflow: hidden">   <?php echo $row['description']; ?></p>
             <div class="col-md-12 post-btn">
                 <?php if(isset($_SESSION['roleIsStudent'])){?>
 
@@ -81,13 +81,12 @@ $user_name=$user_first_name ." ".$user_last_name;
 
 
                     ?>
-        <button type="button" class="btn btn-default continu-reading">Read More</button>
+                        <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 45px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-user-post"; ?>">Read More</a>
+                        <a type="button" name="likes"  class="btn btn-default views" style="margin-right: 45px ;margin-left: 12px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-likes&user=requst-from-user-post"; ?>">Likes</a>
+                        <a type="button" name="update-post"  class="btn btn-default views" style="margin-right: 45px;margin-left: 12px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-update&user=requst-from-user-post"; ?>" >Update</a>
+                        <a type="button" name="delete-post"  class="btn btn-default pull-right" style="margin-right: 20px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-delete&user=requst-from-user-post"; ?>" >Delete</a>
 
-        <button type="button" class="btn btn-default comment" data-toggle="modal" data-target="#comment">Edit</button>
-        <button type="button" class="btn btn-default views" data-toggle="modal" data-target="#views">Delete</button>
-                        <button type="button" value=" <?php   $_GET[$row['id']]; ?>"  class="btn btn-default views" data-toggle="modal" data-target="#update-post">Update</button>
-
-        <?php }else {?>
+                    <?php }else {?>
                         <button type="button" class="btn btn-default continu-reading">Read More</button>
                         <button type="button" class="btn btn-default comment" data-toggle="modal" data-target="#comment">Comment</button>
                         <button type="button" class="btn btn-default views" data-toggle="modal" data-target="#views">200 Views</button>
