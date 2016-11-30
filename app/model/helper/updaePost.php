@@ -31,7 +31,7 @@ class updaePost
             $_SESSION["AddPostSuccessfully"]=$this->updatePostSuccessfully;
             $_SESSION["redirectAddPostModel"]=$this->updatePostSuccessfully;
            $user=$_GET['user'];
-            header("Location: ../../index.php?user=' .$user.");
+            header("Location: ../../index.php?user=$user");
 
 
         }else {

@@ -56,7 +56,6 @@ class redirectModel
 
         }else
             if($request=="post-delete"){
-
                   echo " <script type=\"text/javascript\">
                 $(window).load(function(){
                    $(\"#delete-post\").modal(\"show\");

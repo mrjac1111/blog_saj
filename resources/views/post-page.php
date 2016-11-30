@@ -4,7 +4,11 @@
 
 include  'app/model/classes/homePost.php';
 $homePost= new homePost();
-if(isset($_SESSION['UserPost'])||isset($_GET['user'])=="requst-from-user-post"){
+$user_post_page=0;
+if(isset($_GET['user'])){
+    $user_post_page=$_GET['user'];
+}
+if(isset($_SESSION['UserPost'])||$user_post_page==="requst-from-user-post"){
      $user_post=$homePost->userPost();
     while($row=mysqli_fetch_array($user_post, MYSQLI_ASSOC)){
         $user_id= $row['user_id'];
@@ -81,10 +85,10 @@ $user_name=$user_first_name ." ".$user_last_name;
 
 
                     ?>
-                        <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 45px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-user-post"; ?>">Read More</a>
-                        <a type="button" name="likes"  class="btn btn-default views" style="margin-right: 45px ;margin-left: 12px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-likes&user=requst-from-user-post"; ?>">Likes</a>
-                        <a type="button" name="update-post"  class="btn btn-default views" style="margin-right: 45px;margin-left: 12px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-update&user=requst-from-user-post"; ?>" >Update</a>
-                        <a type="button" name="delete-post"  class="btn btn-default pull-right" style="margin-right: 20px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-delete&user=requst-from-user-post"; ?>" >Delete</a>
+                        <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 45px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-home-post"; ?>">Read More</a>
+                        <a type="button" name="likes"  class="btn btn-default views" style="margin-right: 45px ;margin-left: 12px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-likes&user=requst-from-home-post"; ?>">Likes</a>
+                        <a type="button" name="update-post"  class="btn btn-default views" style="margin-right: 45px;margin-left: 12px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-update&user=requst-from-home-post"; ?>" >Update</a>
+                        <a type="button" name="delete-post"  class="btn btn-default pull-right" style="margin-right: 20px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-delete&user=requst-from-home-post"; ?>" >Delete</a>
 
                     <?php }else {?>
                         <button type="button" class="btn btn-default continu-reading">Read More</button>
