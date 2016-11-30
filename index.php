@@ -13,6 +13,7 @@
 <?php include 'resources/views/likes-model.php'; ?>
 <?php include 'resources/views/sign-up-model.php'; ?>
 <?php include 'resources/views/add-post-model.php'; ?>
+<?php include 'resources/views/update-post-model.php'; ?>
 <?php include 'resources/views/end-of-views.php'; ?>
 <?php //include 'config/Connection.php'; ?>
 
@@ -21,9 +22,11 @@
 <?php include 'app/model/helper/redirectModel.php';
 
 
-    $ifValidationFail= new redirectModel();
-    $signUpRedirct=$ifValidationFail->signUp();
-    $addPostRedirct=$ifValidationFail->addPost();
+    $request= new redirectModel();
+    $signUpRedirct=$request->signUp(); //sign up fail its validation
+    $addPostRedirct=$request->addPost(); // add post fail its validation
+if(isset($_GET['id']))echo $_GET['id'];
+    $PostRedirct=$request->CRUDPost($_GET['id'],$_GET['request']);
 
 
 ?>

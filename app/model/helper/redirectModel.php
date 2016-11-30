@@ -15,13 +15,11 @@ class redirectModel
     {
 
         if(isset($_SESSION["signUpRedirectModel"])){
-
-
             echo " <script type=\"text/javascript\">
-    $(window).load(function(){
-        $(\"#sign-up\").modal(\"show\");
-    });
-</script> ";
+            $(window).load(function(){
+            $(\"#sign-up\").modal(\"show\");
+            });
+            </script> ";
            // unset($_SESSION["showErrOnModel"]);
             unset($_SESSION["signUpRedirectModel"]);
         }
@@ -32,16 +30,56 @@ class redirectModel
     function addPost()
     {
         if(isset($_SESSION["redirectAddPostModel"])){
+             echo " <script type=\"text/javascript\">
+                    $(window).load(function(){
+                    $(\"#add-post\").modal(\"show\");
+                    });
+                    </script> ";
+                    //   unset($_SESSION["showErrOnModel"]);
+                        unset($_SESSION["redirectAddPostModel"]);
+        }
+
+    }
+
+    function CRUDPost($id,$request)
+    {
+
+        if($request=="post-update"){
 
 
             echo " <script type=\"text/javascript\">
     $(window).load(function(){
-        $(\"#add-post\").modal(\"show\");
+        $(\"#update-post\").modal(\"show\");
     });
 </script> ";
-         //   unset($_SESSION["showErrOnModel"]);
-            unset($_SESSION["redirectAddPostModel"]);
-        }
+
+
+        }else
+            if($request=="post-delete"){
+
+                  echo " <script type=\"text/javascript\">
+                $(window).load(function(){
+                   $(\"#delete-post\").modal(\"show\");
+                 });
+                </script> ";
+        }else
+                if ($request=="likes"){
+
+                    echo " <script type=\"text/javascript\">
+                                 $(window).load(function(){
+                                   $(\"#post-likes\").modal(\"show\");
+                                      });
+                        </script> ";
+
+                }else
+                    if ($request="post-read-more"){
+                        echo " <script type=\"text/javascript\">
+                        $(window).load(function(){
+                        $(\"#post-readmore\").modal(\"show\");
+                          });
+                        </script> ";
+                         }
+
 
     }
 

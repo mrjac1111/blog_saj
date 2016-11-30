@@ -10,14 +10,16 @@ class imageValidation
     private $otherFielsdError;
 
     function image($otherFielsdError,$requestFrom){
+
         $this->otherFielsdError= $otherFielsdError;
+      echo  $requestFromUpdatePost=$_GET['user'];
 
         if($requestFrom=="requestFromSignUp"){
            $target_dir = "../../public/img/profile/";
             
 
-        }else if($requestFrom=="requestFromAddPost"){
-            $target_dir = "../../public/img/post/";
+        }else if($requestFrom=="requestFromAddPost"||$requestFromUpdatePost=="requst-from-user-post"){
+           echo $target_dir = "../../public/img/post/";
 
         }
 
@@ -38,14 +40,23 @@ class imageValidation
                 echo  $this->imageErr= "File is not an image.";
                 if($requestFrom=="requestFromSignUp"){
                     $_SESSION["profileImageErr"] = $this->imageErr;
+                    $this->insertion=0;
+
 
                 }else if($requestFrom=="requestFromAddPost"){
                     $_SESSION["postImageErr"] = $this->imageErr;
+                    $this->insertion=0;
+
+
+                }else     if($requestFrom=="post-update"){
+                    $_SESSION["update-post-image-Err"] = $this->imageErr;
+                    $this->insertion=0;
+
 
                 }
 
 
-                $this->insertion=0;
+
                 $uploadOk = 0;
             }
         }else
@@ -57,6 +68,9 @@ class imageValidation
 
                 }else if($requestFrom=="requestFromAddPost"){
                     $_SESSION["postImageErr"] = $this->imageErr;
+
+                }else if($requestFrom=="post-update"){
+                    $_SESSION["update-post-image-Err"] = $this->imageErr;
 
                 }
 
@@ -71,6 +85,9 @@ class imageValidation
 
                     }else if($requestFrom=="requestFromAddPost"){
                         $_SESSION["postImageErr"] = $this->imageErr;
+
+                    }else if($requestFrom=="post-update"){
+                        $_SESSION["update-post-image-Err"] = $this->imageErr;
 
                     }
 
@@ -87,6 +104,9 @@ class imageValidation
                         }else if($requestFrom=="requestFromAddPost"){
                             $_SESSION["postImageErr"] = $this->imageErr;
 
+                        }else if($requestFrom=="post-update"){
+                         echo   $_SESSION["update-post-image-Err"] = $this->imageErr;
+
                         }
 
                         $this->insertion=0;
@@ -101,41 +121,63 @@ class imageValidation
                             }else if($requestFrom=="requestFromAddPost"){
                                 $_SESSION["postImageErr"] = $this->imageErr;
 
+                            }else if($requestFrom=="post-update"){
+                                $_SESSION["update-post-image-Err"] = $this->imageErr;
+
                             }
 
                             $this->insertion=0;
 // if everything is ok, try to upload file
                         } else
                             if($this->otherFielsdError==1){
+                                echo $target_file;
                                 if (move_uploaded_file($_FILES["input-file-preview"]["tmp_name"], $target_file)) {
                                     echo "The file ". basename( $_FILES["input-file-preview"]["name"]). " has been uploaded.";
                                     if (isset($_SESSION["profileImageErr"])){
                                         unset($_SESSION["profileImageErr"]);
                                     }else  if (isset($_SESSION["postImageErr"])){
                                         unset($_SESSION["postImageErr"]);
+                                    }else if($requestFrom=="post-update"){
+                                        $_SESSION["update-post-image-Err"] = $this->imageErr;
+
                                     }
 
                                 } else {
-                                    echo $this->profileImageErr="Sorry, there was an error uploading your file.";
+                                    echo $this->imageErr="Sorry, there was an error uploading your file.";
                                     if($requestFrom=="requestFromSignUp"){
                                         $_SESSION["profileImageErr"] = $this->imageErr;
+                                        $this->insertion=0;
+
 
                                     }else if($requestFrom=="requestFromAddPost"){
                                         $_SESSION["postImageErr"] = $this->imageErr;
+                                        $this->insertion=0;
+
+
+                                    }else if($requestFrom=="post-update"){
+                                        $_SESSION["update-post-image-Err"] = $this->imageErr;
+                                        $this->insertion=0;
 
                                     }
-                                    $this->insertion=0;
                                 }
                             }else{
                                 echo $this->imageErr="Other fields are required";
                                 if($requestFrom=="requestFromSignUp"){
                                     $_SESSION["profileImageErr"] = $this->imageErr;
+                                    $this->insertion=0;
+
 
                                 }else if($requestFrom=="requestFromAddPost"){
                                     $_SESSION["postImageErr"] = $this->imageErr;
+                                    $this->insertion=0;
+
+
+                                }else if($requestFrom=="post-update"){
+                                    $_SESSION["update-post-image-Err"] = $this->imageErr;
+                                    $this->insertion=0;
+
 
                                 }
-                                $this->insertion=0;
 
                             }
 

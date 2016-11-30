@@ -18,11 +18,18 @@ class titleValidation
 
     }
 
-    function validation(){
+    function validation($forUpdatePost){
         if(empty($_POST['title'])){
             echo $this->titleErr = "Post Title is required";
-            $_SESSION["titleErr"] = $this->titleErr;
+          if($forUpdatePost=="post-update"){
+              $_SESSION["update-post-title-Err"] = $this->titleErr;
+
+          }else{
+              $_SESSION["titleErr"] = $this->titleErr;
+
+          }
             $this->insertion=0;
+
         }else{
             $this->title = $this->testInput->test_input($_POST["title"]);
 

@@ -18,15 +18,21 @@ class descriptionValidation
 
     }
 
-    function validation(){
-        if(empty($_POST["description"])){
-            echo $this->descriptionErr = "description is required";
-            $_SESSION["descriptionErr"] = $this->descriptionErr;
-            $this->insertion=0;
-        }else{
-            $this->description = $this->testInput->test_input($_POST["description"]);
+    function validation($forUpdatePost){
+        $this->description = $this->testInput->test_input($_POST["description"]);
 
-            if(isset($_SESSION['descriptionErr']))
+        if(empty($this->description)){
+            echo $this->descriptionErr = "description is required";
+            if($forUpdatePost=="post-update"){
+                $_SESSION["update-post-description-Err"] = $this->descriptionErr;
+
+            }else{
+                $_SESSION["descriptionErr"] = $this->descriptionErr;
+
+            }
+            $this->insertion=0;
+        }else
+            if(isset($_SESSION['descriptionErr'])){
                 unset ($_SESSION['descriptionErr']);
         }
         return $this->description;
