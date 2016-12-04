@@ -71,23 +71,23 @@ $user_name=$user_first_name ." ".$user_last_name;
             <div class="col-md-12 post-btn">
                 <?php if(isset($_SESSION['roleIsStudent'])){?>
 
-                    <button type="button" class="btn btn-default continu-reading">Read More</button>
-                    <button type="button" class="btn btn-default comment" data-toggle="modal" data-target="#comment">Comment</button>
-                    <button type="button" class="btn btn-default views" data-toggle="modal" data-target="#views">200 Views</button>
-                    <button type="button" class="btn btn-default likes" data-toggle="modal" data-target="#likes">100 Likes</button>
+                    <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 45px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-home-post"; ?>">Read More</a>
+                    <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 50px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-home-post"; ?>">comment</a>
+                    <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 50px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-home-post"; ?>">Views</a>
+                    <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 0px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-home-post"; ?>">Likes</a>
 
                 <?php } else if(isset($_SESSION['roleIsAdmin'])){?>
-                    <button type="button" class="btn btn-default continu-reading">Read More</button>
-
-                <button type="button" value=" <?php   $_GET[$row['id']]; ?>"  class="btn btn-default views" data-toggle="modal" data-target="#update-post">Delete</button>
-                    <button type="button" class="btn btn-default comment" data-toggle="modal" data-target="#comment">Comment</button>
+                    <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 45px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-home-post"; ?>">Read More</a>
+                    <a type="button" name="delete-post"  class="btn btn-default pull-right" style="margin-right: 20px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-delete&user=requst-from-home-post"; ?>" >Delete</a>
+                    <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 34px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-home-post"; ?>">Comment</a>
                      <?php   if($_SESSION['user_id']==$user_id_of_post){ ?>
-                        <button type="button" class="btn btn-default likes" data-toggle="modal" data-target="#likes">Edit</button>
+                        <a type="button" name="update-post"  class="btn btn-default views" style="margin-right: 45px;margin-left: 12px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-update&user=requst-from-home-post"; ?>" >Update</a>
 
                     <?php } else { ?>
-                    <button type="button" class="btn btn-default likes" data-toggle="modal" data-target="#likes">100 Likes</button>
+                        <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 45px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-home-post"; ?>">Likes</a>
 
-                <?php } }  else if(isset($_SESSION['roleIsAuther'])){
+
+                    <?php } }  else if(isset($_SESSION['roleIsAuther'])){
 
                     if($_SESSION['user_id']==$user_id_of_post){
 
@@ -99,10 +99,10 @@ $user_name=$user_first_name ." ".$user_last_name;
                         <a type="button" name="delete-post"  class="btn btn-default pull-right" style="margin-right: 20px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-delete&user=requst-from-home-post"; ?>" >Delete</a>
 
                     <?php }else {?>
-                        <button type="button" class="btn btn-default continu-reading">Read More</button>
-                        <button type="button" class="btn btn-default comment" data-toggle="modal" data-target="#comment">Comment</button>
-                        <button type="button" class="btn btn-default views" data-toggle="modal" data-target="#views">200 Views</button>
-                        <button type="button" class="btn btn-default likes" data-toggle="modal" data-target="#likes">100 Likes</button>
+                        <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 45px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-home-post"; ?>">Read More</a>
+                        <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 50px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-user-post"; ?>">Comment</a>
+                        <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 50px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-user-post"; ?>">Vievs</a>
+                        <a type="button" name="read-more"  class="btn btn-default " style="margin-right: 0px"  href="index.php?id=<?php echo $row['id'];echo "&request=post-readmore&user=requst-from-user-post"; ?>">Likes</a>
 
                     <?php  } } ?>
         </div>

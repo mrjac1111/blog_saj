@@ -16,6 +16,7 @@
 <?php include 'resources/views/add-post-model.php'; ?>
 <?php include 'resources/views/update-post-model.php'; ?>
 <?php include 'resources/views/delete-post- model.php'; ?>
+<?php include 'resources/views/readmore-post-model.php'; ?>
 <?php include 'resources/views/end-of-views.php'; ?>
 <?php //include 'config/Connection.php'; ?>
 
