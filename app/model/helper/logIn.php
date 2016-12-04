@@ -24,12 +24,12 @@ class logIn
                  $user_last_name=$user_data['lastName'];
                  $user_profile_image=$user_data['profileImage'];
                  $user_gender=$user_data['gender'];
-
                 $_SESSION['user_id']=$user_id;
                 $_SESSION['user_first_name']=$user_first_name;
                 $_SESSION['user_last_name']=$user_last_name;
                echo $_SESSION['user_profile_image']=$user_profile_image;
                 $_SESSION['user_gender']=$user_gender;
+                $_SESSION['user_email']=$email;
                echo  $_SESSION['log_in_message']='loginSuccessaly';
 
                 $sql="SELECT user_role_id FROM user_role WHERE user_id ='$user_id' ";
@@ -39,12 +39,16 @@ class logIn
 
                 if($setUserRoleId==1){
                     $_SESSION['roleIsStudent']='roleIsStudent';
+                    $_SESSION['role']='Student';
 
                 }elseif($setUserRoleId==2){
                     $_SESSION['roleIsAuther']='roleIsAuther';
+                    $_SESSION['role']='Auther';
 
                 }elseif($setUserRoleId==3){
                     $_SESSION['roleIsAdmin']='roleIsAdmin';
+                    $_SESSION['role']='Admin';
+
                 }
              header('Location: ../../index.php');
 

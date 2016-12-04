@@ -5,6 +5,9 @@
 include  'app/model/classes/homePost.php';
 $homePost= new homePost();
 $user_post_page=0;
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////Show User Post Page////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(isset($_GET['user'])){
     $user_post_page=$_GET['user'];
 }
@@ -18,6 +21,7 @@ if(isset($_SESSION['UserPost'])||$user_post_page==="requst-from-user-post"){
         $user_last_name=$user_data['lastName'];
         $user_name=$user_first_name ." ".$user_last_name;
 ?>
+
     <div class="col-md-12 post">
         <div class="col-md-4 post-img">
             <img src="public/img/post/<?php echo $row['postImage'];?>" class="img-responsive" style="height: 150px" width="300" alt="Post Image" >
@@ -40,6 +44,10 @@ if(isset($_SESSION['UserPost'])||$user_post_page==="requst-from-user-post"){
 
 
    <?php  } unset($_SESSION['UserPost']); } else{
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////Show Home Post Page////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $posts=$homePost->Post();
 while($row = mysqli_fetch_array($posts, MYSQLI_ASSOC)) {
     $user_id_of_post= $row['user_id'];

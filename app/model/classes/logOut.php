@@ -16,6 +16,8 @@ function userLogOut(){
     if(isset($_SESSION['user_first_name'])){unset($_SESSION['user_first_name']);}
     if(isset($_SESSION['user_last_name'])){unset($_SESSION['user_last_name']);}
     if(isset($_SESSION['user_profile_image'])){unset($_SESSION['user_profile_image']);}
+    if(isset($_SESSION['user_email'])){unset($_SESSION['user_email']);}
+    if(isset($_SESSION['role'])){unset($_SESSION['role']);}
 
     if(isset($_SESSION['roleIsStudent'])){
         unset($_SESSION['roleIsStudent']);

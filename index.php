@@ -3,6 +3,7 @@
 <?php include 'resources/views/start-of-views.php'; ?>
 <?php include 'resources/views/header.php'; ?>
 <?php include 'resources/views/header-social-bar.php'; ?>
+<?php include 'resources/views/user-profile.php'; ?>
 <?php include 'resources/views/post-page-login.php'; ?>
 <?php include 'resources/views/post-page-catagery.php'; ?>
 <?php include 'resources/views/post-page.php'; ?>
